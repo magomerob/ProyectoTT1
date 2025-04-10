@@ -1,60 +1,122 @@
-#include "../include/matrix.hpp"
+#include "../include/Matrix.h"
+#include <iostream>
+#include <iomanip>
 
-using namespace std;
-
-
-Matrix::Matrix(int n_row, int n_column){
-    if(n_row <= 0 || n_column <= 0){
-        cout<<"Matrix: error in n_row/n_column\n";
-        exit(EXIT_FAILURE);
-    }
-
-    this->n_row = n_row;
-    this->n_column = n_column;
-    this->data = (double**)malloc(n_row*sizeof(double*));
-
-    if(this->data == NULL){
-        cout<<"Matrix: error in data\n";
-        exit(EXIT_FAILURE);
-    }
-
-    for(int i = 0; i<n_row; i++){
-        this->data[i] = (double*)malloc(n_column*sizeof(double));
-    }
+Matrix::Matrix(int fil, int col) : fil(fil), col(col)
+{
+    initMatrix();
+}
+ 
+Matrix::Matrix(int fil, int col, double v[], int n): fil(fil), col(col)
+{
+    initMatrix();
+ 
+    int k = 0;
+    
+    for (int i = 0; i < fil; i++)
+        for (int j = 0; j < col; j++){
+            if (k < n)
+                matrix[i][j] = v[k++];
+            else
+                matrix[i][j] = 0;
+        }
+}
+ 
+Matrix::Matrix(const Matrix& m)
+{
+    *this = m;
 }
 
-double& Matrix::operator () (const int n_row, const int n_column){
-        if(n_row <= 0 || n_row <= 0 || n_row >= this->n_row ||n_column > this->n_column > n_column){
-            cout<<"Matrix get: error in n_row/n_column\n";
-            exit(EXIT_FAILURE);
-        }
-        return this->data[n_row-1][n_column-1];
+ostream& operator << (ostream &o, Matrix &m) {
+	for (int i = 1; i <= m.fil; i++) {
+        for (int j = 1; j <= m.col; j++)
+			printf("%5.20lf ", m(i,j));
+        o << "\n";
+    }
+	
+    return o;
 }
 
-double& Matrix::operator + (Matrix &m){
-        if(m.n_row != this->n_row ||this->n_column != m.n_column){
-            cout<<"Matrix add: error in n_row/n_column\n";
-            exit(EXIT_FAILURE);
-        }
+Matrix& zeros(const int n_row, const int n_column) {
+	Matrix *m_aux = new Matrix(n_row, n_column);
+	
+	for(int i = 1; i <= n_row; i++) {
+		for(int j = 1; j <= n_column; j++) {
+			(*m_aux)(i,j) = 0;
+		}
+	}
+	
+	return (*m_aux);
+} 
 
-        Matrix *m_aux = new Matrix(this->n_row, this->n_column);
+void Matrix::initMatrix()
+{
+    matrix = new double*[fil];
+    for (int i = 0; i < fil; i++)
+        matrix[i] = new double[col];
+ 
+    for (int i = 0; i < fil; i++)
+        for (int j = 0; j < col; j++)
+            matrix[i][j] = 0.0;
+}
 
-        for(int i = 0; i < m.n_row; i++){
-            for(int j = 0; j < m.n_column; j++){
-                (*m_aux)(i,j) = (*m)(t,j) + (*this)(i,j)
+Matrix::~Matrix()
+{
+    for (int i = 0; i < fil; i++)
+        delete[] matrix[i];
+ 
+    delete[] matrix;
+}
+ 
+Matrix& Matrix::operator=(const Matrix& matrix2)
+{
+    for (int i = 0; i < fil; i++)
+        for (int j = 0; j < col; j++)
+            this->matrix[i][j] = matrix2.matrix[i][j];
+ 
+    return *this;
+}
+ 
+Matrix Matrix::operator+(const Matrix& matrix2)
+{
+    Matrix result(fil, col);
+    
+    for (int i = 0; i < fil; i++)
+        for (int j = 0; j < col; j++)
+            result.matrix[i][j] = matrix[i][j] + matrix2.matrix[i][j];
+ 
+    return result;
+}
+ 
+Matrix Matrix::operator-(const Matrix& matrix2)
+{
+    Matrix result(fil, col);
+    
+    for (int i = 0; i < fil; i++)
+        for (int j = 0; j < col; j++)
+            result.matrix[i][j] = matrix[i][j] - matrix2.matrix[i][j];
+ 
+    return result;
+}
+ 
+Matrix Matrix::operator*(const Matrix& matrix2)
+{
+    Matrix result(fil, col);
+ 
+    for (int i = 0; i < this->fil ; i++){
+        for (int j = 0; j < matrix2.col; j++){
+            result.matrix[i][j] = 0;
+            for (int k = 0; k < this->col; k++){
+                result.matrix[i][j] = result.matrix[i][j] + this->matrix[i][k] * matrix2.matrix[k][j];
             }
-
         }
-}
-
-
-ostream& Matrix::operator << (ostream &o, Matrix &m){
-    for(int i = 0; i < m.n_row; i++){
-        for(int j = 0; j < m.n_column; j++){
-            printf("%5.20lf ",m(i,j));
-        }
-        o << "\n"
     }
-
-    return 0;
+ 
+    return result;
+}
+ 
+ 
+double& Matrix::operator()(const int i, const int j) const
+{
+    return matrix[i-1][j-1];
 }
