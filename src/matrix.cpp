@@ -291,3 +291,159 @@ void Matrix::assign_column(const Matrix& col, const int ind)
         (*this)(i, ind) = col(i);
     }
 }
+
+Matrix& eye(const int fil, const int col) {
+	Matrix *m_aux = new Matrix(fil, col);
+	
+	for(size_t i = 1; i <= fil; i++) {
+		for(size_t j = 1; j <= col; j++) {
+			(*m_aux)(i,j) = 1;
+		}
+	}
+	
+	return (*m_aux);
+} 
+
+Matrix& transpose(const Matrix& matrix)
+{
+    Matrix *m_aux = new Matrix(matrix.col, matrix.fil);
+	
+	for(size_t i = 1; i <= matrix.fil; i++) {
+		for(size_t j = 1; j <= matrix.col; j++) {
+			(*m_aux)(j,i) = matrix(i,j);
+		}
+	}
+	
+	return (*m_aux);
+}
+
+Matrix Matrix::operator+(const double n)
+{
+    Matrix result(fil, col);
+    
+    for (size_t i = 0; i < fil; i++)
+        for (size_t j = 0; j < col; j++)
+            result.matrix[i][j] = matrix[i][j] + n;
+ 
+    return result;
+}
+ 
+Matrix Matrix::operator-(const double n)
+{
+    Matrix result(fil, col);
+    
+    for (size_t i = 0; i < fil; i++)
+        for (size_t j = 0; j < col; j++)
+            result.matrix[i][j] = matrix[i][j] - n;
+ 
+    return result;
+}
+
+Matrix Matrix::operator+(const double n)
+{
+    Matrix result(fil, col);
+    
+    for (size_t i = 0; i < fil; i++)
+        for (size_t j = 0; j < col; j++)
+            result.matrix[i][j] = matrix[i][j] * n;
+ 
+    return result;
+}
+ 
+Matrix Matrix::operator-(const double n)
+{
+    if(abs(n)<1e-10){
+        cout << "Div: can't divide by 0\n";
+        exit(EXIT_FAILURE);
+    }
+
+    Matrix result(fil, col);
+    
+    for (size_t i = 0; i < fil; i++)
+        for (size_t j = 0; j < col; j++)
+            result.matrix[i][j] = matrix[i][j] / n;
+ 
+    return result;
+}
+
+Matrix::Matrix(int n) : fil(1), col(n)
+{
+    initMatrix();
+}
+
+double norm(Matrix& vec)
+{
+    if (vec.fil != 1){
+		cout << "Vector norm: not a vector\n";
+        exit(EXIT_FAILURE);
+	}
+
+    double sum = 0.0;
+	for(size_t i = 1; i <=vec.col; i++) {
+		sum+=pow(vec(i), 2);
+	}
+	return sqrt(sum);
+}
+
+double dot(Matrix &vec1, Matrix &vec2) {
+	if (vec1.fil!=1 || vec2.fil!=1) {
+		cout << "Vector dot: not a vector" << endl;
+		exit(EXIT_FAILURE);
+	}
+    if(vec1.col!=vec2.col){
+        cout << "Vector dot: different size vectors" << endl;
+		exit(EXIT_FAILURE);
+    }
+	double sum = 0.0;
+	for(size_t i = 1; i <=vec1.col; i++) {
+		sum+=vec1(i)*vec2(i);
+	}
+
+	return sum;
+}
+
+Matrix& cross(Matrix &vec1,Matrix &vec2){
+	if(vec1.col!=3 || vec2.col!=3 || vec1.fil!=1 || vec2.fil!=1){
+		cout<<"Vector cross: not size 3 vectors\n";
+		exit(EXIT_FAILURE);
+	}
+	Matrix *m_aux=new Matrix(3);
+	(*m_aux)(1)=vec1(2)*vec2(3)-vec1(3)*vec2(2);
+	(*m_aux)(2)=vec1(3)*vec2(1)-vec1(1)*vec2(3);
+	(*m_aux)(3)=vec1(1)*vec2(2)-vec1(2)*vec2(1);
+	
+	return *m_aux;
+}
+
+Matrix extract_vector (Matrix &v,int i, int j)
+{
+    if(v.fil!=1){
+		cout<<"Vector extract: not a vector\n";
+		exit(EXIT_FAILURE);
+	}
+    if(v.col < j || i<1 || i>j){
+        cout<<"Vector extract: wrong indexes\n";
+		exit(EXIT_FAILURE);
+    }
+    Matrix res(j-i+1);
+    for(size_t k = i; k<=j; k++){
+        res(k-i+1) = v(k);
+    }
+
+    return res;
+}
+
+Matrix union_vector(Matrix &v1, Matrix &v2)
+{
+    if(v1.fil!=1 || v2.fil!=1){
+		cout<<"Vector union: not a vector\n";
+		exit(EXIT_FAILURE);
+	}
+    Matrix res(v1.col+v2.col);
+    for(size_t i = 1; i<=v1.col; i++){
+        res(i) = v1(i);
+    }
+    for(size_t i = 1; i<=v2.col; i++){
+        res(i+v1.col) = v2(i);
+    }
+}

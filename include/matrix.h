@@ -29,6 +29,13 @@ class Matrix
      * @param [in] col Número de filas.
      */
         Matrix(int fil, int col);
+    
+    /**
+     * @brief Construye un nuevo objeto Matrix del tipo vector vacío.
+     * 
+     * @param [in] n Número de elementos.
+     */
+        Matrix(int n);
 
     /**
      * @brief Construye un nuevo objeto Matrix a partir de un vector inicial.
@@ -140,6 +147,38 @@ class Matrix
      * @param [in] ind el índice de la fila a sustituir.
      */
         void assign_row(const Matrix& fil, const int ind);
+    
+    /**
+     * @brief Sobreescribe el operador + para la suma.
+     * 
+     * @param [in] n El real que sumar.
+     * @return Matrix La matriz resultado de la suma.
+     */
+        Matrix operator+(const double n);
+    
+    /**
+     * @brief Sobreescribe el operador - para la resta.
+     * 
+     * @param [in] n El real que restar.
+     * @return Matrix La matriz resultado de la resta.
+     */
+        Matrix operator-(const double n);
+    
+    /**
+     * @brief Sobreescribe el operador + para la multiplicación.
+     * 
+     * @param [in] n El real que multiplicar.
+     * @return Matrix La matriz resultado del producto.
+     */
+        Matrix operator*(const double n);
+    
+    /**
+     * @brief Sobreescribe el operador / para la división.
+     * 
+     * @param [in] n El real que divide.
+     * @return Matrix La matriz resultado de la división.
+     */
+        Matrix operator/(const double n);
     private:
         void initMatrix();
  
@@ -169,4 +208,65 @@ Matrix& zeros(const int fil, const int col);
  */
 Matrix inv(const Matrix& matrix);
 
+/**
+ * @brief Genera una matriz de unos con tamaño fil*col.
+ * 
+ * @param fil Numero de filas de la matriz.
+ * @param col Numero de columnas de la matriz.
+ * @return Matrix& matriz de ceros.
+ */
+Matrix& eye(const int fil, const int col);
+
+/**
+ * @brief Función para transponer una matriz.
+ * 
+ * @param [in] matrix La matriz a transponer.
+ * @return Matrix La matriz transpuesta.
+ */
+Matrix& transpose(const Matrix& matrix);
+
+/**
+ * @brief Función para calcualr la norma de un vector.
+ * 
+ * @param vec Vector al que se le calcula la norma.
+ * @return double Norma del vector.
+ */
+double norm(Matrix& vec);
+
+/**
+ * @brief Función para calcualr el producto escalar de dos vectores.
+ * 
+ * @param vec1 Vector 1.
+ * @param vec2 Vector 2.
+ * @return double Norma del vector.
+ */
+double dot(Matrix& vec1, Matrix& vec2);
+
+/**
+ * @brief Función para calcualr el producto vectorial de dos vectores.
+ * 
+ * @param vec1 Vector 1.
+ * @param vec2 Vector 2.
+ * @return Matrix& Vector resultado.
+ */
+Matrix& cross(Matrix& vec1, Matrix& vec2);
+
+/**
+ * @brief Extrae un subvector de un vector.
+ * 
+ * @param v Vector del cual se extrae.
+ * @param i Índice a partir del cual se extrae.
+ * @param j Índice hasta el que se extrae.
+ * @return Matrix& Subvector resultado.
+ */
+Matrix extract_vector (Matrix &v,int i, int j);
+
+/**
+ * @brief Une dos vectores.
+ * 
+ * @param v1 Primer vector.
+ * @param v2 Segundo vector
+ * @return Matrix Vector resultado de la concatenación.
+ */
+Matrix union_vector(Matrix &v1, Matrix &v2);
 #endif 
