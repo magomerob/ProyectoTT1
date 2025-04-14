@@ -11,11 +11,12 @@
  */
 
 #include "../include/meanObliquity.h"
+#include "../include/sat_const.h"
 
 double MOblq(double Mjd_TT)
 {
-    const double MJD_J2000 = 51544.5;
-    const double Rad = 0.017453292519943295;
+    const double MJD_J2000 = SAT_Const().MJD_J2000;
+    const double Rad = SAT_Const().Rad;
 
     double T = (Mjd_TT-MJD_J2000)/36525;
 

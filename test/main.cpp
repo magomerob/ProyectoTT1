@@ -1,3 +1,13 @@
+/**
+ * @file main.cpp
+ * @author Marcos Gómez Robres
+ * @brief Archivo principal
+ * @version 0.1
+ * @date 2025-04-14
+ * 
+ * @copyright Copyright (c) 2025
+ * 
+ */
 #include "../include/matrix.h"
 #include "../include/cheb3d.h"
 #include "../include/eccAnom.h"

@@ -11,11 +11,12 @@
  */
 
 #include "../include/position.h"
+#include "../include/sat_const.h"
 
 Matrix Position(double lon, double lat, double h)
 {
-    const double R_equ = 6378136.3;
-    const double f = 0.0033528106647474805;
+    double R_equ = SAT_Const().R_Earth;
+    double f = SAT_Const().f_Earth;
 
     double e2 = f*(2.0-f);   // Square of eccentricity
     double CosLat = cos(lat);// Cosine of geodetic latitude
