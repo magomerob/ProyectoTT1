@@ -102,7 +102,7 @@ Matrix Matrix::operator+(const Matrix& matrix2)
  
 Matrix Matrix::operator-(const Matrix& matrix2)
 {
-    Matrix result(fil, col);
+    Matrix result(this->fil, this->col);
     
     for (int i = 0; i < fil; i++)
         for (int j = 0; j < col; j++)
@@ -143,7 +143,7 @@ double& Matrix::operator()(const int n) const
 		cout << "Vector get: position out of bounds\n";
         exit(EXIT_FAILURE);
 	}
-    return matrix[0][n];
+    return matrix[0][n-1];
 }
 
 Matrix Matrix::operator/(const Matrix& matrix2)
@@ -339,7 +339,7 @@ Matrix Matrix::operator-(const double n)
     return result;
 }
 
-Matrix Matrix::operator+(const double n)
+Matrix Matrix::operator*(const double n)
 {
     Matrix result(fil, col);
     
@@ -350,7 +350,7 @@ Matrix Matrix::operator+(const double n)
     return result;
 }
  
-Matrix Matrix::operator-(const double n)
+Matrix Matrix::operator/(const double n)
 {
     if(abs(n)<1e-10){
         cout << "Div: can't divide by 0\n";
@@ -446,4 +446,5 @@ Matrix union_vector(Matrix &v1, Matrix &v2)
     for(size_t i = 1; i<=v2.col; i++){
         res(i+v1.col) = v2(i);
     }
+    return res;
 }
