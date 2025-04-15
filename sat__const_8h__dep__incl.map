@@ -1,0 +1,13 @@
+<map id="/github/workspace/include/sat_const.h" name="/github/workspace/include/sat_const.h">
+<area shape="rect" id="Node000001" title="Esta es la cabecera de la clase SAT_Const, esta recoge las constantes usadas en el resto de programas..." alt="" coords="277,5,450,46"/>
+<area shape="rect" id="Node000002" href="$iers_8h.html" title="Esta es la cabecera de la función iers, esta maneja el tiempo iers y el moimiento polar." alt="" coords="5,94,178,135"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="288,54,154,96,152,91,286,49"/>
+<area shape="rect" id="Node000004" href="$meanObliquity_8cpp.html" title="Implementación el calculo de la obliquidad media." alt="" coords="202,94,352,135"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="335,59,298,95,295,92,331,55"/>
+<area shape="rect" id="Node000005" href="$position_8cpp.html" title="Implementación del cálculo de la posición geodésica." alt="" coords="376,94,525,135"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="396,55,432,92,429,95,392,59"/>
+<area shape="rect" id="Node000006" href="$sat__const_8cpp.html" title="Implementación de la clase de constantes SAT_const." alt="" coords="549,94,698,135"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="438,49,565,91,563,96,436,54"/>
+<area shape="rect" id="Node000003" href="$iers_8cpp.html" title="Implementación de la función iers." alt="" coords="17,183,166,223"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="94,150,94,182,89,182,89,150"/>
+</map>

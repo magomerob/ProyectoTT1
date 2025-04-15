@@ -1,0 +1,14 @@
+<map id="/github/workspace/include/position.h" name="/github/workspace/include/position.h">
+<area shape="rect" id="Node000001" title="Esta es la cabecera de la clase mjday, esta implementa un el cálculo de la posición en coordenadas ge..." alt="" coords="5,5,178,46"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="23,168,80,193"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,47,61,153,56,152,84,46"/>
+<area shape="rect" id="Node000003" href="$matrix_8h.html" title="Esta es la cabecera de la clase Matriz, esta implementa este objeto en C++." alt="" coords="100,94,166,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="104,45,122,79,117,81,99,48"/>
+<area shape="poly" id="edge5_Node000003_Node000002" title=" " alt="" coords="121,122,78,159,75,155,117,118"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="105,168,161,193"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="136,120,136,152,130,152,130,120"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="184,168,244,193"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="148,118,191,155,187,159,145,122"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="268,168,339,193"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="163,118,262,159,260,164,161,123"/>
+</map>

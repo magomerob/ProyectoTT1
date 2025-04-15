@@ -1,0 +1,31 @@
+<map id="/github/workspace/test/tests.cpp" name="/github/workspace/test/tests.cpp">
+<area shape="rect" id="Node000001" title="Archivo que contiene todos los test." alt="" coords="346,5,500,46"/>
+<area shape="rect" id="Node000002" href="$matrix_8h.html" title="Esta es la cabecera de la clase Matriz, esta implementa este objeto en C++." alt="" coords="114,168,236,193"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="346,35,275,42,201,54,137,72,114,83,98,96,94,104,93,111,101,128,117,144,138,158,135,162,114,148,96,131,88,112,89,102,94,92,111,79,135,67,199,49,274,37,345,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,241,62,267"/>
+<area shape="poly" id="edge16_Node000001_Node000003" title=" " alt="" coords="346,36,274,44,197,57,131,74,105,85,87,96,64,125,49,160,41,195,37,226,32,225,36,194,44,158,60,122,84,92,103,80,129,69,196,52,273,39,345,31"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="302,241,360,267"/>
+<area shape="poly" id="edge17_Node000001_Node000005" title=" " alt="" coords="501,33,551,44,596,61,613,72,623,86,626,103,618,121,595,151,567,175,535,196,501,213,434,237,376,250,375,244,432,231,499,208,532,191,564,171,591,147,614,118,620,102,618,88,609,76,594,65,550,49,499,38"/>
+<area shape="rect" id="Node000007" href="$cheb3d_8h.html" title="Esta es la cabecera de la clase cheb3d, esta implementa una aproximación de chebyshev." alt="" coords="108,94,236,120"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="361,49,226,91,225,86,359,44"/>
+<area shape="rect" id="Node000008" href="$eccAnom_8h.html" title="Esta es la cabecera de la clase eccAnom, esta implementa un el cálculo de la anomalía excéntrica para..." alt="" coords="260,94,402,120"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="402,48,358,86,355,82,398,44"/>
+<area shape="rect" id="Node000009" href="$accelPointMass_8h.html" title="Esta es la cabecera de la clase accelPointMass, esta implementa este objeto en C++." alt="" coords="425,94,604,120"/>
+<area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="447,44,491,82,487,86,444,48"/>
+<area shape="rect" id="Node000010" href="$timediff_8h.html" title="Esta es la cabecera de la clase timediff, esta implementa una lista de diferencias horarias." alt="" coords="679,94,807,120"/>
+<area shape="poly" id="edge15_Node000001_Node000010" title=" " alt="" coords="501,43,679,87,678,92,499,48"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="832,94,881,120"/>
+<area shape="poly" id="edge18_Node000001_Node000011" title=" " alt="" coords="500,34,644,57,817,91,816,96,643,62,500,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="152,196,72,236,70,232,150,191"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="110,241,170,267"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="172,195,155,228,150,226,167,192"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="202,191,292,232,289,237,200,196"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="194,241,265,267"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="186,192,213,227,209,231,182,195"/>
+<area shape="poly" id="edge8_Node000007_Node000002" title=" " alt="" coords="175,120,176,152,171,152,170,120"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="191,118,250,166,312,228,308,232,246,170,187,122"/>
+<area shape="poly" id="edge11_Node000008_Node000002" title=" " alt="" coords="305,123,216,163,214,158,303,118"/>
+<area shape="poly" id="edge10_Node000008_Node000005" title=" " alt="" coords="334,120,334,226,328,226,328,120"/>
+<area shape="poly" id="edge14_Node000009_Node000002" title=" " alt="" coords="457,123,248,167,247,161,456,118"/>
+<area shape="poly" id="edge13_Node000009_Node000005" title=" " alt="" coords="501,122,360,233,356,229,498,118"/>
+</map>

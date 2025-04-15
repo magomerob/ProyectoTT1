@@ -1,0 +1,33 @@
+<map id="/github/workspace/test/main.cpp" name="/github/workspace/test/main.cpp">
+<area shape="rect" id="Node000001" title="Archivo principal." alt="" coords="462,5,616,46"/>
+<area shape="rect" id="Node000002" href="$matrix_8h.html" title="Esta es la cabecera de la clase Matriz, esta implementa este objeto en C++." alt="" coords="369,168,490,193"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="540,47,533,83,516,121,494,144,470,162,467,157,491,140,511,118,528,81,535,46"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="668,241,740,267"/>
+<area shape="poly" id="edge19_Node000001_Node000006" title=" " alt="" coords="616,28,652,35,688,47,721,66,748,92,756,109,760,127,756,165,742,200,724,230,720,227,737,198,751,163,755,128,751,111,743,96,718,70,686,52,650,40,615,33"/>
+<area shape="rect" id="Node000007" href="$cheb3d_8h.html" title="Esta es la cabecera de la clase cheb3d, esta implementa una aproximación de chebyshev." alt="" coords="5,94,134,120"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="462,43,149,95,148,90,461,37"/>
+<area shape="rect" id="Node000008" href="$eccAnom_8h.html" title="Esta es la cabecera de la clase eccAnom, esta implementa un el cálculo de la anomalía excéntrica para..." alt="" coords="158,94,299,120"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="462,49,291,92,290,87,461,44"/>
+<area shape="rect" id="Node000009" href="$accelPointMass_8h.html" title="Esta es la cabecera de la clase accelPointMass, esta implementa este objeto en C++." alt="" coords="322,94,502,120"/>
+<area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="509,49,446,88,443,83,506,44"/>
+<area shape="rect" id="Node000010" href="$legendre_8h_source.html" title=" " alt="" coords="576,94,712,120"/>
+<area shape="poly" id="edge15_Node000001_Node000010" title=" " alt="" coords="566,44,617,82,614,86,563,49"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="666,168,716,193"/>
+<area shape="poly" id="edge20_Node000001_Node000011" title=" " alt="" coords="617,32,647,40,677,52,704,69,726,93,732,109,730,126,714,157,709,154,725,124,727,109,722,95,701,73,674,56,645,45,615,37"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="392,241,448,267"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="431,194,426,226,421,226,425,193"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="472,241,531,267"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="443,192,480,228,477,232,440,195"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="302,241,360,267"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="414,196,361,234,358,230,411,192"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="477,191,654,237,652,242,475,196"/>
+<area shape="poly" id="edge8_Node000007_Node000002" title=" " alt="" coords="131,118,354,162,353,167,130,123"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="93,118,297,231,294,236,90,123"/>
+<area shape="poly" id="edge11_Node000008_Node000002" title=" " alt="" coords="263,118,382,159,380,165,261,123"/>
+<area shape="poly" id="edge10_Node000008_Node000005" title=" " alt="" coords="239,118,316,227,311,230,234,122"/>
+<area shape="poly" id="edge14_Node000009_Node000002" title=" " alt="" coords="418,119,426,152,420,153,412,121"/>
+<area shape="poly" id="edge13_Node000009_Node000005" title=" " alt="" coords="400,122,378,143,358,169,346,198,338,227,333,226,341,196,354,166,374,139,396,118"/>
+<area shape="poly" id="edge17_Node000010_Node000002" title=" " alt="" coords="609,123,481,165,480,160,607,118"/>
+<area shape="poly" id="edge16_Node000010_Node000005" title=" " alt="" coords="628,122,574,157,504,196,437,223,375,243,373,238,435,218,502,191,571,153,626,118"/>
+<area shape="poly" id="edge18_Node000010_Node000011" title=" " alt="" coords="654,118,677,153,672,156,650,121"/>
+</map>
