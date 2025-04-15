@@ -448,3 +448,24 @@ Matrix union_vector(Matrix &v1, Matrix &v2)
     }
     return res;
 }
+
+Matrix& Matrix::operator=(Matrix&& other) noexcept {
+
+    if (this == &other) return *this;
+
+    // Free old memory
+    for (int i = 0; i < fil; ++i)
+        delete[] matrix[i];
+    delete[] matrix;
+
+    // Steal data
+    matrix = other.matrix;
+    fil = other.fil;
+    col = other.col;
+
+    other.matrix = nullptr;
+    other.fil = 0;
+    other.col = 0;
+
+    return *this;
+}

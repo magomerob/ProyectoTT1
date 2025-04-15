@@ -45,7 +45,7 @@ class Matrix
      * @param [in] v Vector con los datos de la matriz.
      * @param [in] n Longitud del vector.
      */
-        Matrix(int fil, int col, double v[], int n);
+        Matrix(int fil, int col, double v[], int n); //skipcq: CXX-W2066
     
     /**
      * @brief Construye un nuevo objeto Matrix a partir de otra matriz.
@@ -179,6 +179,9 @@ class Matrix
      * @return Matrix La matriz resultado de la división.
      */
         Matrix operator/(const double n);
+    
+        Matrix& operator=(Matrix&& other) noexcept;
+
     private:
         void initMatrix();
  
