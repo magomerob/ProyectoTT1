@@ -38,6 +38,12 @@ class Matrix
         Matrix(int n);
 
     /**
+     * @brief Construye un nuevo objeto Matrix vacío.
+     * 
+     */
+        Matrix();
+
+    /**
      * @brief Construye un nuevo objeto Matrix a partir de un vector inicial.
      * 
      * @param [in] fil Número de filas.
@@ -202,6 +208,14 @@ ostream& operator << (ostream &o, Matrix &m);
  * @return Matrix& matriz de ceros.
  */
 Matrix& zeros(const int fil, const int col);
+
+/**
+ * @brief Genera una vector de ceros con tamaño n.
+ * 
+ * @param n Numero de filas de la matriz.
+ * @return Matrix& matriz de ceros.
+ */
+Matrix& zeros(const int n);
 
 /**
  * @brief función para calcular la matriz inversa usando el método de Gauss-Jordan

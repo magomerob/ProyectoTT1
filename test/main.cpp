@@ -10,6 +10,7 @@
  */
 #include "../include/matrix.h"
 #include "../include/cheb3d.h"
+#include "../include/azelpa.h"
 #include "../include/eccAnom.h"
 #include "../include/accelPointMass.h"
 #include "../include/legendre.h"
@@ -19,19 +20,30 @@
 using namespace std;
 
 int main(){
-    cout<<"auto"<<endl;
-    auto [p10, p20] = legendre(2, 2, 0);
-    cout << p10 << endl;
 
-    cout<<"tie"<<endl;
-    Matrix p1(3, 3);
-    Matrix p2(3, 3);
-    tie(p1, p2) = legendre(2, 2, 0);
-    cout<<p1<<endl;
-    cout<<"get"<<endl;
-    auto res = legendre(2, 2, 0);
-    Matrix p11(get<0>(res));
-    Matrix p22(get<1>(res));
-    cout<<p11<<endl;
+    Matrix v(3);
+
+    v(1) = 1;
+    v(2) = 2;
+    v(3) = 3;
+
+    //auto [a,b,c,d] = azelpa(v);
+
+    //cout << a <<endl<< b<<endl << c << d << endl;
+
+    auto [A,B] = legendre(2, 2, 1);
+    cout << A <<endl<< B << endl;
+
+    /*
+    resultado esperado
+    1.00000000000000000000 0.00000000000000000000 0.00000000000000000000 
+    1.45747045027529753547 0.93583099453595375294 0.00000000000000000000
+    1.25691629764617052167 1.76084674147066455596 0.56531333344858780698 
+
+    0.00000000000000000000 0.00000000000000000000 0.00000000000000000000
+    0.93583099453595375294 -1.45747045027529753547 0.00000000000000000000
+    3.04987602056929052452 -1.61172970742831900282 -1.76084674147066455596
+    */
+
     return 0;
 }

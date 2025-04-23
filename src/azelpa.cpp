@@ -14,9 +14,11 @@
 #include <cmath>
 #include "../include/azelpa.h"
 
+using namespace std;
 
-tuple<double, double, Matrix&, Matrix&> azelpa(const Matrix& s)
+tuple<double, double, Matrix, Matrix> azelpa(Matrix& s)
 {
+
     const double pi2 = M_PI * 2.0;
 
     double rho = sqrt(s(1)*s(1)+s(2)*s(2));
@@ -44,5 +46,6 @@ tuple<double, double, Matrix&, Matrix&> azelpa(const Matrix& s)
 
     dEds = dEds / dot(s2,s2);
 
-    return {Az, El, dAds, dEds};
+    
+    return make_tuple(Az, El, dAds, dEds);
 }

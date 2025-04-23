@@ -25,18 +25,32 @@ Matrix::Matrix(int fil, int col, double v[], int n): fil(fil), col(col)
  
     int k = 0;
     
-    for (int i = 0; i < fil; i++)
+    for (int i = 0; i < fil; i++){
         for (int j = 0; j < col; j++){
             if (k < n)
                 matrix[i][j] = v[k++];
             else
                 matrix[i][j] = 0;
         }
+    }
 }
  
-Matrix::Matrix(const Matrix& m)
+Matrix::Matrix(const Matrix& m) : fil(m.fil), col(m.col)
 {
-    *this = m;
+    initMatrix();
+
+    for (int i = 0; i < fil; i++){
+        for (int j = 0; j < col; j++){
+            this->matrix[i][j] = m(i+1,j+1);
+        }
+    }
+}
+
+Matrix::Matrix()
+{
+    this->col=0;
+    this->fil=0;
+    this->matrix=nullptr;
 }
 
 ostream& operator << (ostream &o, Matrix &m) {
@@ -56,6 +70,16 @@ Matrix& zeros(const int n_row, const int n_column) {
 		for(int j = 1; j <= n_column; j++) {
 			(*m_aux)(i,j) = 0;
 		}
+	}
+	
+	return (*m_aux);
+} 
+
+Matrix& zeros(const int n) {
+	Matrix *m_aux = new Matrix(n);
+	
+	for(int i = 1; i <= n; i++) {
+			(*m_aux)(i) = 0;
 	}
 	
 	return (*m_aux);

@@ -27,6 +27,6 @@ using namespace std;
  * @param s Vector posición del satélite.
  * @return tuple<double, double, Matrix&, Matrix&> Azimuth, Elevación, Parciales en x e y.
  */
-tuple<double, double, Matrix&, Matrix&> azelpa(const Matrix& s);
+tuple<double, double, Matrix, Matrix> azelpa(Matrix& s);
 
 #endif
