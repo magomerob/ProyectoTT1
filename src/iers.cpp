@@ -50,12 +50,12 @@ tuple<double, double, double, double, double, double, double, double, double> ie
         dy_pole = preeop(12)+(nexteop(12)-preeop(12))*fixf;
         TAI_UTC = preeop(13);
         
-        x_pole  = x_pole/SAT_Const().Arcs;  // Pole coordinate [rad]
-        y_pole  = y_pole/SAT_Const().Arcs;  // Pole coordinate [rad]
-        dpsi    = dpsi/SAT_Const().Arcs;
-        deps    = deps/SAT_Const().Arcs;
-        dx_pole = dx_pole/SAT_Const().Arcs; // Pole coordinate [rad]
-        dy_pole = dy_pole/SAT_Const().Arcs; // Pole coordinate [rad]
+        x_pole  = x_pole/SAT_Const::Arcs;  // Pole coordinate [rad]
+        y_pole  = y_pole/SAT_Const::Arcs;  // Pole coordinate [rad]
+        dpsi    = dpsi/SAT_Const::Arcs;
+        deps    = deps/SAT_Const::Arcs;
+        dx_pole = dx_pole/SAT_Const::Arcs; // Pole coordinate [rad]
+        dy_pole = dy_pole/SAT_Const::Arcs; // Pole coordinate [rad]
     }
     else if (interp =='n'){ 
         mjd = (floor(Mjd_UTC));
@@ -63,14 +63,14 @@ tuple<double, double, double, double, double, double, double, double, double> ie
         Matrix eop2 (eop.extract_row(i));
         // Setting of IERS Earth rotation parameters
         // (UT1-UTC [s], TAI-UTC [s], x ["], y ["])
-        x_pole  = eop2(5)/SAT_Const().Arcs;  // Pole coordinate [rad]
-        y_pole  = eop2(6)/SAT_Const().Arcs;  // Pole coordinate [rad]
+        x_pole  = eop2(5)/SAT_Const::Arcs;  // Pole coordinate [rad]
+        y_pole  = eop2(6)/SAT_Const::Arcs;  // Pole coordinate [rad]
         UT1_UTC = eop2(7);                   // UT1-UTC time difference [s]
         LOD     = eop2(8);                   // Length of day [s]
-        dpsi    = eop2(9)/SAT_Const().Arcs;
-        deps    = eop2(10)/SAT_Const().Arcs;
-        dx_pole = eop2(11)/SAT_Const().Arcs; // Pole coordinate [rad]
-        dy_pole = eop2(12)/SAT_Const().Arcs; // Pole coordinate [rad]
+        dpsi    = eop2(9)/SAT_Const::Arcs;
+        deps    = eop2(10)/SAT_Const::Arcs;
+        dx_pole = eop2(11)/SAT_Const::Arcs; // Pole coordinate [rad]
+        dy_pole = eop2(12)/SAT_Const::Arcs; // Pole coordinate [rad]
         TAI_UTC = eop2(13);                  // TAI-UTC time difference [s]
     }
     else{

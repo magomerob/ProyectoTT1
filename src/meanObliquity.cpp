@@ -15,8 +15,8 @@
 
 double MOblq(double Mjd_TT)
 {
-    const double MJD_J2000 = SAT_Const().MJD_J2000;
-    const double Rad = SAT_Const().Rad;
+    const double MJD_J2000 = SAT_Const::MJD_J2000;
+    const double Rad = SAT_Const::Rad;
 
     double T = (Mjd_TT-MJD_J2000)/36525;
 

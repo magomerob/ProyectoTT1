@@ -1,6 +1,6 @@
 // $Header$
 /**
- * @file iers.h
+ * @file legendre.h
  * @author Marcos Gómez Robres
  * @brief Esta es la cabecera de la función legendre, esta calcula dichos polinomios.
  * @version 0.1

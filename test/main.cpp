@@ -14,6 +14,7 @@
 #include "../include/eccAnom.h"
 #include "../include/accelPointMass.h"
 #include "../include/legendre.h"
+#include "../include/nutAngles.h"
 #include <iostream>
 #include <tuple>
 
@@ -45,5 +46,7 @@ int main(){
     3.04987602056929052452 -1.61172970742831900282 -1.76084674147066455596
     */
 
+    auto [f,g] = NutAngles(2003);
+    cout << f <<endl<< g << endl;
     return 0;
 }
