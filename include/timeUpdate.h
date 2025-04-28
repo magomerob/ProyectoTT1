@@ -26,7 +26,7 @@
  * @param [in] Qdt Double.  
  * @return Matrix tiempo actualizado.
  */
-Matrix& TimeUpdate (Matrix &P, Matrix &Phi, double Qdt);	
+Matrix TimeUpdate (Matrix &P, Matrix &Phi, double Qdt);	
 
 /**
  * @brief Actualiza el tiempo, da el valoR 0 a Qdt.
@@ -36,5 +36,5 @@ Matrix& TimeUpdate (Matrix &P, Matrix &Phi, double Qdt);
  * @param [in] Phi Matriz.  
  * @return Matrix tiempo actualizado. 
  */
-Matrix& TimeUpdate (Matrix &P, Matrix &Phi);	
+Matrix TimeUpdate (Matrix &P, Matrix &Phi);	
 #endif

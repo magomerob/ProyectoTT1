@@ -17,5 +17,5 @@ double sign(double a, double b)
     if(b>=0){
         return fabs(a);
     }
-    return -1*fabs(b);
+    return -1*fabs(a);
 }

@@ -12,10 +12,10 @@
 
 #include "..\include\timeUpdate.h"
 
-Matrix& TimeUpdate (Matrix &P, Matrix &Phi, double Qdt){
+Matrix TimeUpdate (Matrix &P, Matrix &Phi, double Qdt){
 	return Phi*P*transpose(Phi) + Qdt;
 	
 }
-Matrix& TimeUpdate (Matrix &P, Matrix &Phi){
+Matrix TimeUpdate (Matrix &P, Matrix &Phi){
 	return TimeUpdate(P,Phi,0.0);
 }

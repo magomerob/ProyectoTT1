@@ -11,7 +11,9 @@
 
 #ifndef _SAT_CONST_
 #define _SAT_CONST_
-#define _USE_MATH_DEFINES
+#ifndef M_PI
+#define M_PI 3.14159265358979323846
+#endif
 #include <cmath>
 
 namespace SAT_Const {

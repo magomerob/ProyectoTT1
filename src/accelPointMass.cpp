@@ -20,6 +20,6 @@ Matrix AccelPointMass (Matrix &r, Matrix &s, double GM)
 
     //Aceleración
     Matrix a(3);
-    a = ((d/(pow(norm(d),2))) + (s/(pow(norm(s),3))))*(-GM);
+    a = ((d/(pow(norm(d),3))) + (s/(pow(norm(s),3))))*(-GM);
     return a;
 }
