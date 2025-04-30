@@ -137,17 +137,22 @@ Matrix Matrix::operator-(const Matrix& matrix2)
  
 Matrix Matrix::operator*(const Matrix& matrix2)
 {
-    Matrix result(fil, col);
- 
-    for (int i = 0; i < this->fil ; i++){
-        for (int j = 0; j < matrix2.col; j++){
+    if (this->col != matrix2.fil) {
+        cout << "Matrix product: size error\n";
+        exit(EXIT_FAILURE);
+    }
+
+    Matrix result(this->fil, matrix2.col);
+
+    for (int i = 0; i < this->fil; i++) {
+        for (int j = 0; j < matrix2.col; j++) {
             result.matrix[i][j] = 0;
-            for (int k = 0; k < this->col; k++){
-                result.matrix[i][j] = result.matrix[i][j] + this->matrix[i][k] * matrix2.matrix[k][j];
+            for (int k = 0; k < this->col; k++) {
+                result.matrix[i][j] += this->matrix[i][k] * matrix2.matrix[k][j];
             }
         }
     }
- 
+
     return result;
 }
  
@@ -397,16 +402,23 @@ Matrix::Matrix(int n) : fil(1), col(n)
 
 double norm(Matrix& vec)
 {
-    if (vec.fil != 1){
-		cout << "Vector norm: not a vector\n";
+    if (vec.fil != 1 && vec.col != 1) {
+        cout << "Vector norm: not a vector\n";
         exit(EXIT_FAILURE);
-	}
+    }
 
     double sum = 0.0;
-	for(size_t i = 1; i <=vec.col; i++) {
-		sum+=pow(vec(i), 2);
-	}
-	return sqrt(sum);
+    if (vec.fil == 1) {
+        for (size_t i = 1; i <= vec.col; i++) {
+            sum += pow(vec(1, i), 2);
+        }
+    } else {
+        for (size_t i = 1; i <= vec.fil; i++) {
+            sum += pow(vec(i, 1), 2);
+        }
+    }
+
+    return sqrt(sum);
 }
 
 double dot(Matrix &vec1, Matrix &vec2) {
