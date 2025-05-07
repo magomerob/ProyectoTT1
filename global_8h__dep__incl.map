@@ -1,0 +1,9 @@
+<map id="/github/workspace/include/global.h" name="/github/workspace/include/global.h">
+<area shape="rect" id="Node000001" title="Esta es la cabecera de la clase global." alt="" coords="97,5,270,46"/>
+<area shape="rect" id="Node000002" href="$JPL__Eph_8h.html" title="Esta es la cabecera de la clase gmst, esta calcula la posición ecuatorial del Sol,..." alt="" coords="5,94,178,135"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="154,59,114,96,110,92,150,55"/>
+<area shape="rect" id="Node000004" href="$global_8cpp.html" title="Esta es la implementación de la clase global." alt="" coords="202,94,352,135"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="218,55,258,92,254,96,214,59"/>
+<area shape="rect" id="Node000003" href="$JPL__Eph_8cpp.html" title="Implementación de JPL_Eph." alt="" coords="17,183,166,223"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="94,150,94,182,89,182,89,150"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="/github/workspace/include/gmst.h" name="/github/workspace/include/gmst.h">
+<area shape="rect" id="Node000001" title="Esta es la cabecera de la clase gmst, esta implementa el tiempo medio Greenwich Sidereal." alt="" coords="5,5,178,46"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="63,168,120,193"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,47,88,81,87,120,91,152,85,153,82,120,83,80,86,46"/>
+<area shape="rect" id="Node000003" href="$frac_8h.html" title="Esta es la cabecera de la clase frac, esta implementa un el cálculo de la parte fraccionaria de un nú..." alt="" coords="97,94,150,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="102,45,115,79,110,81,97,47"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="121,121,106,154,101,152,116,119"/>
+</map>

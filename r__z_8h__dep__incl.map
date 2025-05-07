@@ -1,0 +1,11 @@
+<map id="/github/workspace/include/r_z.h" name="/github/workspace/include/r_z.h">
+<area shape="rect" id="Node000001" title="Esta es la cabecera de la clase r_z, esta implementa un el cálculo de la matriz de rotación en el eje..." alt="" coords="174,5,346,46"/>
+<area shape="rect" id="Node000002" href="$precMatrix_8h.html" title="Esta es la cabecera de la clase precMatrix, esta implementa la transformación de la matriz de precesi..." alt="" coords="82,94,254,135"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="230,59,191,96,187,92,226,55"/>
+<area shape="rect" id="Node000005" href="$r__z_8cpp.html" title="Implementación del cálculo de la matriz de rotación en el eje z." alt="" coords="279,94,428,135"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="294,55,334,92,330,96,290,59"/>
+<area shape="rect" id="Node000003" href="$precMatrix_8cpp.html" title="Implementación de la transformación de la matriz de precesión." alt="" coords="5,183,155,223"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="139,148,102,184,98,180,135,144"/>
+<area shape="rect" id="Node000004" href="$tests_8cpp.html" title="Archivo que contiene todos los test." alt="" coords="179,183,333,223"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="201,144,238,180,234,184,197,148"/>
+</map>

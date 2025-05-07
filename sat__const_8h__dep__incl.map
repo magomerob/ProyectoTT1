@@ -1,0 +1,17 @@
+<map id="/github/workspace/include/sat_const.h" name="/github/workspace/include/sat_const.h">
+<area shape="rect" id="Node000001" title="Esta es la cabecera de la clase SAT_Const, esta recoge las constantes usadas en el resto de programas..." alt="" coords="293,5,466,46"/>
+<area shape="rect" id="Node000002" href="$iers_8h.html" title="Esta es la cabecera de la función iers, esta maneja el tiempo iers y el moimiento polar." alt="" coords="5,94,178,135"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="300,53,158,96,156,91,299,48"/>
+<area shape="rect" id="Node000004" href="$precMatrix_8h.html" title="Esta es la cabecera de la clase precMatrix, esta implementa la transformación de la matriz de precesi..." alt="" coords="201,94,374,135"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="350,59,310,96,306,92,346,55"/>
+<area shape="rect" id="Node000007" href="$meanObliquity_8cpp.html" title="Implementación el calculo de la obliquidad media." alt="" coords="398,94,548,135"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="414,55,454,92,450,96,410,59"/>
+<area shape="rect" id="Node000008" href="$position_8cpp.html" title="Implementación del cálculo de la posición geodésica." alt="" coords="572,94,721,135"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="455,49,586,91,585,96,454,54"/>
+<area shape="rect" id="Node000003" href="$iers_8cpp.html" title="Implementación de la función iers." alt="" coords="17,183,166,223"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="94,150,94,182,89,182,89,150"/>
+<area shape="rect" id="Node000005" href="$precMatrix_8cpp.html" title="Implementación de la transformación de la matriz de precesión." alt="" coords="201,183,350,223"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="285,151,281,183,276,182,280,150"/>
+<area shape="rect" id="Node000006" href="$tests_8cpp.html" title="Archivo que contiene todos los test." alt="" coords="375,183,528,223"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="339,140,416,180,413,185,337,145"/>
+</map>

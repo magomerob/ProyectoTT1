@@ -1,0 +1,12 @@
+<map id="/github/workspace/include/legendre.h" name="/github/workspace/include/legendre.h">
+<area shape="rect" id="Node000001" title="Esta es la cabecera de la función legendre, esta calcula dichos polinomios." alt="" coords="170,5,342,46"/>
+<area shape="rect" id="Node000002" href="$accelHarmonic_8h.html" title="Esta es la cabecera de la clase accelHarmonic, esta implementa este objeto en C++." alt="" coords="46,94,218,135"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,57,162,96,159,91,214,53"/>
+<area shape="rect" id="Node000004" href="$main_8cpp.html" title="Archivo principal." alt="" coords="179,183,333,223"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="259,61,259,182,253,182,253,61"/>
+<area shape="rect" id="Node000005" href="$legendre_8cpp.html" title="Implementación de la función legendre." alt="" coords="293,94,443,135"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="295,53,344,91,341,96,292,58"/>
+<area shape="rect" id="Node000003" href="$accelHarmonic_8cpp.html" title="Implementación de la aceleración armónica." alt="" coords="5,183,155,223"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="115,149,94,184,89,181,110,147"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="174,142,229,180,226,184,171,146"/>
+</map>
