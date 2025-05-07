@@ -105,7 +105,7 @@ if (0<=dt && dt<=4){
     j=7;
     Mjd0 = t1+4*j;
 }
-r_Moon = 1e3*Cheb3D(Mjd_TDB, 13, Mjd0, Mjd0+4, Cx_Moon(13*j+1:13*j+13),...
+Matrix r_Moon = 1e3*Cheb3D(Mjd_TDB, 13, Mjd0, Mjd0+4, Cx_Moon(13*j+1:13*j+13),...
                     Cy_Moon(13*j+1:13*j+13), Cz_Moon(13*j+1:13*j+13))';
 
 temp = (753:11:786);
