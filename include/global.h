@@ -16,6 +16,7 @@
  
 
 extern Matrix eopdata;
+extern Matrix PC;
 
 void eop19620101(int c);
  

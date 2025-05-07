@@ -20,6 +20,9 @@
 #include "../include/mjday_tdb.h"
 #include "../include/position.h"
 #include "../include/sign.h"
+
+#include "../include/gmst.h"
+#include "../include/precMatrix.h"
 #include <cstdio>
 #include <cmath>
 #include <tuple>
@@ -27,7 +30,7 @@ int tests_run = 0;
 
 using namespace std;
 
-#define FAIL() printf("/nfailure in %s() line %d/n", __func__, __LINE__)
+#define FAIL() printf("\nfailure in %s() line %d\n", __func__, __LINE__)
 #define _assert(test) do { if (!(test)) { FAIL(); return 1; } } while(0)
 #define _verify(test) do { int r=test(); tests_run++; if(r) return r; } while(0)
 
@@ -39,7 +42,7 @@ int m_equals(Matrix A, Matrix B, double e = 1e-10) {
 		for(int i = 1; i <= A.fil; i++)
 			for(int j = 1; j <= A.col; j++)
 				if(fabs(A(i,j)-B(i,j)) > e) {
-					printf("%2.20lf %2.20lf\n",A(i,j),B(i,j));
+					printf("%2.20lf %2.20lf pos %i %i\n",A(i,j),B(i,j),i,j);
 					return 0;
 				}
 	
@@ -681,6 +684,27 @@ int test_sign()
 
 }
 
+//FALTAN
+
+int test_gmst()
+{
+	_assert(abs(3.86479-gmst(2460803))<1e-5);
+	return 0;
+
+}
+
+int test_precMatrix()
+{
+	Matrix m = precMatrix(2450803,2460803);
+	Matrix m2 = zeros(3,3);
+
+	
+	m2(1,1)=0.999976404960704;m2(1,2)=-0.00636469924721845;m2(1,3)=-0.00258459384809681;
+	m2(2,1)=0.00636469924622329;m2(2,2)=0.999979745062791;m2(2,3)=-8.22556332843431e-06;
+	m2(3,1)=0.00258459385054743;m2(3,2)=-8.22479327083077e-06;m2(3,3)=0.999996659897912;
+	
+	_assert(m_equals(m,m2));
+}
 
 int all_tests()
 {
@@ -717,6 +741,8 @@ int all_tests()
 	_verify(test_mjday_tdb);
 	_verify(test_position);
 	_verify(test_sign);
+	_verify(test_gmst);
+	_verify(test_precMatrix);
     return 0;
 }
 
