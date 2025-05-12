@@ -9,8 +9,8 @@
  * @bug No known bugs
  */
 
- #ifndef _GMST_
- #define _GMST_
+ #ifndef _JPL_
+ #define _JPL_
  #include <cmath>
  #include <tuple>
  #include "matrix.h"

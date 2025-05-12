@@ -9,6 +9,7 @@
  * 
  */
 #define _USE_MATH_DEFINES
+#include "../include/JPL_Eph.h"
 #include "../include/matrix.h"
 #include "../include/cheb3d.h"
 #include "../include/eccAnom.h"
@@ -20,10 +21,19 @@
 #include "../include/mjday_tdb.h"
 #include "../include/position.h"
 #include "../include/sign.h"
-
+#include "../include/r_x.h"
+#include "../include/r_y.h"
+#include "../include/r_z.h"
+#include "../include/timediff.h"
+#include "../include/azelpa.h"
+#include "../include/iers.h"
+#include "../include/legendre.h"
+#include "../include/timeUpdate.h"
 #include "../include/gmst.h"
+#include "../include/nutAngles.h"
 #include "../include/precMatrix.h"
-#include <cstdio>
+#include "../include/global.h"
+#include <cstdio>	
 #include <cmath>
 #include <tuple>
 int tests_run = 0;
@@ -684,7 +694,132 @@ int test_sign()
 
 }
 
-//FALTAN
+int test_rx()
+{
+	Matrix A(3,3);
+	Matrix B(3,3);
+	A(1,1) = 1.0;A(1,2) = 0;A(1,3) = 0;
+	A(2,1) = 0;A(2,2) = 0;A(2,3) = 1.0;
+	A(3,1) = 0;A(3,2) = -1.0;A(3,3) = 0;
+
+	B = r_x(M_PI/2);
+
+	_assert(m_equals(A,B));
+
+	return 0;
+}
+
+int test_ry()
+{
+	Matrix A(3,3);
+	Matrix B(3,3);
+	A(1,1) = 0;A(1,2) = 0;A(1,3) = -1.0;
+	A(2,1) = 0;A(2,2) = 1.0;A(2,3) = 0;
+	A(3,1) = 1.0;A(3,2) = 0;A(3,3) = 0;
+
+	B = r_y(M_PI/2);
+
+	_assert(m_equals(A,B));
+
+	return 0;
+}
+
+int test_rz()
+{
+	Matrix A(3,3);
+	Matrix B(3,3);
+	A(1,1) = 0;A(1,2) = 1.0;A(1,3) = 0;
+	A(2,1) = -1.0;A(2,2) = 0;A(2,3) = 0;
+	A(3,1) = 0;A(3,2) = 0;A(3,3) = 1.0;
+
+	B = r_z(M_PI/2);
+
+	_assert(m_equals(A,B));
+
+	return 0;
+}
+
+int test_timediff()
+{
+	double t1 = 6.067604166666651e04;
+	double t2 = 7.0e04;
+	TimeDifferences dt = timediff(t1,t2);
+	_assert(fabs(dt.UT1_TAI - -9.323958333333489e+03) < 1e-10);
+	_assert(fabs(dt.UTC_GPS - -69981) < 1e-10);
+	_assert(fabs(dt.UT1_GPS - -9.304958333333489e+03) < 1e-10);
+	_assert(fabs(dt.TT_UTC - 7.003218399999999e+04) < 1e-10);
+	_assert(fabs(dt.GPS_UTC - 69981) < 1e-10);
+	return 0;
+}
+
+int test_azelpa()
+{
+	Matrix r(3);
+	r(1)=1; r(2)=2; r(3)=3;
+	double a = 0.463647609000806;
+	double b = 0.930274014115472;
+	tuple<double, double, Matrix, Matrix> result = azelpa(r);
+
+	_assert(fabs(get<0>(result) - a) < 1e-10);
+	_assert(fabs(get<1>(result) - b) < 1e-10);
+	return 0;
+}
+
+int test_iers()
+{
+	tuple<double, double, double, double, double, double, double, double, double> result = iers(eopdata, 40340, 'l');
+	
+	_assert(fabs(get<0>(result) - 1.24267442741996e-07) < 1e-10);
+	_assert(fabs(get<1>(result) - 1.72124370831681e-06) < 1e-10);
+	_assert(fabs(get<2>(result) - -0.0025048) < 1e-10);
+	_assert(fabs(get<3>(result) -  0.003476) < 1e-10);
+	_assert(fabs(get<4>(result) - 2.81565241577985e-07) < 1e-10);
+	_assert(fabs(get<5>(result) - 1.7133315490411e-08) < 1e-10);
+	_assert(fabs(get<6>(result) -  0) < 1e-10);
+	_assert(fabs(get<7>(result) - 0) < 1e-10);
+	_assert(fabs(get<8>(result) - 7) < 1e-10);
+	return 0;
+}
+
+test_legendre()
+{
+	auto [A,B] = legendre(2, 2, 1);
+
+	Matrix C(3,3);
+	Matrix D(3,3);
+    C(1,1)=1.00000000000000000000;C(1,2)=0.00000000000000000000;C(1,3)=0.00000000000000000000;
+    C(2,1)=1.45747045027529753547;C(2,2)=0.93583099453595375294;C(2,3)=0.00000000000000000000;
+    C(3,1)=1.25691629764617052167;C(3,2)=1.76084674147066455596;C(3,3)=0.56531333344858780698;
+
+    D(1,1)=0.00000000000000000000;D(1,2)=0.00000000000000000000;D(1,3)=0.00000000000000000000;
+    D(2,1)=0.93583099453595375294;D(2,2)=-1.45747045027529753547;D(2,3)=0.00000000000000000000;
+    D(3,1)=3.04987602056929052452;D(3,2)=-1.61172970742831900282;D(3,3)=-1.76084674147066455596;
+
+	_assert(m_equals(A,C));
+	_assert(m_equals(B,D));
+	return 0;
+}
+
+int test_nutangles()
+{
+	tuple<double, double> result= NutAngles(34000);
+	_assert(fabs(3.51485038567364e-05-get<0>(result))<1e-10);
+	_assert(fabs(3.75448367402296e-05-get<1>(result))<1e-10);
+	return 0;
+}
+
+int test_timeupdate()
+{
+	Matrix r=eye(3,3);
+	Matrix v(3);
+	v(1)=1; v(2)=2; v(3)=3;
+	Matrix result = TimeUpdate(r, v, 1.0);
+	Matrix expected(1);
+	expected(1)=37;
+
+	_assert(m_equals(result, transpose(expected), 1e-10));
+	return 0;
+}
 
 int test_gmst()
 {
@@ -704,10 +839,76 @@ int test_precMatrix()
 	m2(3,1)=0.00258459385054743;m2(3,2)=-8.22479327083077e-06;m2(3,3)=0.999996659897912;
 	
 	_assert(m_equals(m,m2));
+	return 0;
+}
+
+int test_jpl()
+{
+	auto [a, b, c, d, e, f, g, h, i, j, k] = JPL_Eph(50000);
+	Matrix A(3);
+	A(1)=-106013268114.407;
+	A(2)=-10704774110.6778;
+	A(3)=-5733414115.03038;
+	_assert(m_equals(a,A, 1e-2));
+	Matrix B(3);
+	B(1)=-215428191214.142;
+	B(2)=-113786449444.223;
+	B(3)=-46005254439.599;
+	_assert(m_equals(b,B, 1e-2));
+	Matrix C(3);
+	C(1)=142969439950.568;
+	C(2)=39449684228.9347;
+	C(3)=17113648323.9793;
+	_assert(m_equals(c,C, 1e-2));
+	Matrix D(3);
+	D(1)=-198514069852.68;
+	D(2)=-234901827954.399;
+	D(3)=-105286846732.194;
+	_assert(m_equals(d,D, 1e-2));
+	Matrix E(3);
+	E(1)=-268216727765.582;
+	E(2)=-758862052731.16;
+	E(3)=-322431019777.682;
+	_assert(m_equals(e,E, 1e-2));
+	Matrix F(3);
+	F(1)=1278811202046.14;
+	F(2)=-195324072722.162;
+	F(3)=-142638833473.58;
+	_assert(m_equals(f,F, 1e-2));
+	Matrix G(3);
+	G(1)=1307661864082.46;
+	G(2)=-2385778983942.11;
+	G(3)=-1065262865019.22;
+	_assert(m_equals(g,G, 1e-2));
+	Matrix H(3);
+	H(1)=1743981369482.03;
+	H(2)=-3815582390654.74;
+	H(3)=-1609685101213.35;
+	_assert(m_equals(h,H, 1e-2));
+	Matrix I(3);
+	I(1)=-2300231562026.75;
+	I(2)=-3910278366850.89;
+	I(3)=-575107437973.647;
+	_assert(m_equals(i,I, 1e-2));
+	Matrix J(3);
+	J(1)=332092361.309373;
+	J(2)=192658201.912627;
+	J(3)=79678751.0600327;
+	_assert(m_equals(j,J, 1e-2));
+	Matrix K(3);
+	K(1)=-143417093159.564;
+	K(2)=-38421114445.7267;
+	K(3)=-16658394353.0936;
+	_assert(m_equals(k,K, 1e-2));
+
+	return 0;
 }
 
 int all_tests()
 {
+
+	eop19620101(21413);
+	DE430Coeff();
 	_verify(test_sum);
 	_verify(test_sub);
 	_verify(test_mult);
@@ -741,8 +942,18 @@ int all_tests()
 	_verify(test_mjday_tdb);
 	_verify(test_position);
 	_verify(test_sign);
+	_verify(test_rx);
+	_verify(test_ry);
+	_verify(test_rz);
+	_verify(test_timediff);
+	_verify(test_azelpa);
+	_verify(test_iers);
+	_verify(test_legendre);
+	_verify(test_nutangles);
+	_verify(test_timeupdate);
 	_verify(test_gmst);
 	_verify(test_precMatrix);
+	_verify(test_jpl);
     return 0;
 }
 
