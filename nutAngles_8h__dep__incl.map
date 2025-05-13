@@ -1,0 +1,17 @@
+<map id="/github/workspace/include/nutAngles.h" name="/github/workspace/include/nutAngles.h">
+<area shape="rect" id="Node000001" title="Esta es la cabecera de la función NutAngles, esta calcula la nutación." alt="" coords="231,5,404,46"/>
+<area shape="rect" id="Node000002" href="$eqnEquinox_8h.html" title="Esta es la cabecera de la clase poleMatrix, esta calcula la ecuación de los equinoccios." alt="" coords="46,94,218,135"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="263,55,175,96,173,91,260,50"/>
+<area shape="rect" id="Node000004" href="$tests_8cpp.html" title="Archivo que contiene todos los test." alt="" coords="179,183,333,223"/>
+<area shape="poly" id="edge8_Node000001_Node000004" title=" " alt="" coords="300,61,284,95,270,142,262,183,256,182,265,140,279,93,295,58"/>
+<area shape="rect" id="Node000005" href="$nutMatrix_8h.html" title="Esta es la cabecera de la clase poleMatrix, esta calcula la transformación del ecuador medio al verda..." alt="" coords="294,94,466,135"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="342,57,368,92,364,95,338,60"/>
+<area shape="rect" id="Node000007" href="$main_8cpp.html" title="Archivo principal." alt="" coords="490,94,643,135"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="389,49,511,91,509,96,387,54"/>
+<area shape="rect" id="Node000003" href="$eqnEquinox_8cpp.html" title="Implementación de eqnEquinox." alt="" coords="5,183,155,223"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="115,149,94,184,89,181,110,147"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="174,142,229,180,226,184,171,146"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="341,146,286,184,283,180,338,142"/>
+<area shape="rect" id="Node000006" href="$nutMatrix_8cpp.html" title="Implementación de LTC." alt="" coords="357,183,507,223"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="402,147,423,181,418,184,397,149"/>
+</map>

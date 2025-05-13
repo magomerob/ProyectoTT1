@@ -1,0 +1,25 @@
+<map id="/github/workspace/include/r_y.h" name="/github/workspace/include/r_y.h">
+<area shape="rect" id="Node000001" title="Esta es la cabecera de la clase r_y, esta implementa un el cálculo de la matriz de rotación en el eje..." alt="" coords="351,5,523,46"/>
+<area shape="rect" id="Node000002" href="$LTC_8h.html" title="Esta es la cabecera de la clase poleMatrix, esta calcula la Transformación del sistema del meridiano ..." alt="" coords="253,94,426,135"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="405,58,363,96,360,92,402,54"/>
+<area shape="rect" id="Node000003" href="$tests_8cpp.html" title="Archivo que contiene todos los test." alt="" coords="263,183,416,223"/>
+<area shape="poly" id="edge13_Node000001_Node000003" title=" " alt="" coords="337,40,284,60,262,75,243,95,236,114,243,133,265,160,294,180,291,184,262,164,239,136,231,114,239,93,258,71,282,55,335,35"/>
+<area shape="rect" id="Node000004" href="$nutMatrix_8h.html" title="Esta es la cabecera de la clase poleMatrix, esta calcula la transformación del ecuador medio al verda..." alt="" coords="5,94,178,135"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="344,53,171,96,169,91,343,48"/>
+<area shape="rect" id="Node000006" href="$poleMatrix_8h.html" title="Esta es la cabecera de la clase poleMatrix, esta calcula la transformación de coordenadas pseudofijas..." alt="" coords="449,94,622,135"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="472,54,515,92,511,96,469,58"/>
+<area shape="rect" id="Node000008" href="$precMatrix_8h.html" title="Esta es la cabecera de la clase precMatrix, esta implementa la transformación de la matriz de precesi..." alt="" coords="645,94,818,135"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="519,48,665,91,664,96,518,53"/>
+<area shape="rect" id="Node000010" href="$r__y_8cpp.html" title="Implementación del cálculo de la matriz de rotación en el eje y." alt="" coords="842,94,992,135"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="539,40,831,91,842,94,841,99,830,97,538,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="342,150,342,182,337,182,337,150"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="163,138,284,180,282,185,161,143"/>
+<area shape="rect" id="Node000005" href="$nutMatrix_8cpp.html" title="Implementación de LTC." alt="" coords="17,183,166,223"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="94,150,94,182,89,182,89,150"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="478,144,385,185,383,180,476,139"/>
+<area shape="rect" id="Node000007" href="$poleMatrix_8cpp.html" title="Implementación de poleMatrix." alt="" coords="461,183,610,223"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="538,150,538,182,533,182,533,150"/>
+<area shape="poly" id="edge11_Node000008_Node000003" title=" " alt="" coords="631,140,417,187,416,182,630,135"/>
+<area shape="rect" id="Node000009" href="$precMatrix_8cpp.html" title="Implementación de la transformación de la matriz de precesión." alt="" coords="657,183,806,223"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="734,150,734,182,729,182,729,150"/>
+</map>

@@ -1,0 +1,36 @@
+<map id="/github/workspace/include/nutMatrix.h" name="/github/workspace/include/nutMatrix.h">
+<area shape="rect" id="Node000001" title="Esta es la cabecera de la clase poleMatrix, esta calcula la transformación del ecuador medio al verda..." alt="" coords="191,5,364,46"/>
+<area shape="rect" id="Node000002" href="$matrix_8h.html" title="Esta es la cabecera de la clase Matriz, esta implementa este objeto en C++." alt="" coords="87,168,153,193"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="202,49,166,68,136,96,124,123,121,152,115,152,119,122,131,92,163,64,200,44"/>
+<area shape="rect" id="Node000007" href="$meanObliquity_8h.html" title="Esta es la cabecera de la clase meanObliquity, esta implementa un el cálculo de la obliquidad media d..." alt="" coords="330,168,444,193"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="305,45,329,66,352,92,369,123,381,152,376,154,364,125,347,96,325,70,302,49"/>
+<area shape="rect" id="Node000008" href="$nutAngles_8h.html" title="Esta es la cabecera de la función NutAngles, esta calcula la nutación." alt="" coords="437,94,526,120"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="329,44,437,85,435,90,327,49"/>
+<area shape="rect" id="Node000011" href="$r__x_8h.html" title="Esta es la cabecera de la clase r_x, esta implementa un el cálculo de la matriz de rotación en el eje..." alt="" coords="145,94,194,120"/>
+<area shape="poly" id="edge13_Node000001_Node000011" title=" " alt="" coords="252,49,200,87,197,82,249,44"/>
+<area shape="rect" id="Node000012" href="$r__y_8h.html" title="Esta es la cabecera de la clase r_y, esta implementa un el cálculo de la matriz de rotación en el eje..." alt="" coords="217,94,266,120"/>
+<area shape="poly" id="edge16_Node000001_Node000012" title=" " alt="" coords="271,48,256,81,251,78,266,45"/>
+<area shape="rect" id="Node000013" href="$r__z_8h.html" title="Esta es la cabecera de la clase r_z, esta implementa un el cálculo de la matriz de rotación en el eje..." alt="" coords="289,94,338,120"/>
+<area shape="poly" id="edge19_Node000001_Node000013" title=" " alt="" coords="289,45,304,78,299,81,284,48"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,241,62,267"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="107,196,61,233,58,229,104,192"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="85,241,144,267"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="122,194,120,226,114,226,117,193"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="264,241,321,267"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="150,191,250,233,248,237,148,196"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="168,241,240,267"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="136,192,180,229,177,233,133,196"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="372,196,322,234,319,230,369,192"/>
+<area shape="poly" id="edge10_Node000008_Node000002" title=" " alt="" coords="437,120,169,172,168,167,436,114"/>
+<area shape="poly" id="edge9_Node000008_Node000005" title=" " alt="" coords="484,121,478,157,470,177,458,195,431,217,399,233,337,250,335,245,397,228,428,213,454,192,466,175,473,155,479,120"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="592,168,691,193"/>
+<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="510,118,602,159,599,163,508,123"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="520,168,569,193"/>
+<area shape="poly" id="edge12_Node000008_Node000010" title=" " alt="" coords="494,118,525,154,521,157,490,122"/>
+<area shape="poly" id="edge15_Node000011_Node000002" title=" " alt="" coords="164,121,139,156,135,153,159,118"/>
+<area shape="poly" id="edge14_Node000011_Node000005" title=" " alt="" coords="182,118,274,228,270,231,178,122"/>
+<area shape="poly" id="edge18_Node000012_Node000002" title=" " alt="" coords="222,123,155,162,153,157,220,118"/>
+<area shape="poly" id="edge17_Node000012_Node000005" title=" " alt="" coords="248,119,285,225,280,227,243,121"/>
+<area shape="poly" id="edge21_Node000013_Node000002" title=" " alt="" coords="290,120,168,164,166,159,288,115"/>
+<area shape="poly" id="edge20_Node000013_Node000005" title=" " alt="" coords="314,120,299,226,293,226,309,120"/>
+</map>

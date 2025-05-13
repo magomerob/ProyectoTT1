@@ -1,0 +1,24 @@
+<map id="/github/workspace/include/JPL_Eph.h" name="/github/workspace/include/JPL_Eph.h">
+<area shape="rect" id="Node000001" title="Esta es la cabecera de la clase gmst, esta calcula la posición ecuatorial del Sol,..." alt="" coords="70,5,242,46"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="23,241,80,267"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,49,46,68,19,95,12,111,9,128,12,164,24,198,38,227,34,230,19,200,7,165,4,128,7,110,15,93,43,64,78,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="268,94,318,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="191,44,261,84,258,88,189,49"/>
+<area shape="rect" id="Node000004" href="$matrix_8h.html" title="Esta es la cabecera de la clase Matriz, esta implementa este objeto en C++." alt="" coords="140,168,206,193"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="177,45,194,67,208,93,210,110,207,126,194,156,189,153,202,125,205,110,203,95,190,69,173,48"/>
+<area shape="rect" id="Node000008" href="$global_8h.html" title="Esta es la cabecera de la clase global." alt="" coords="30,94,95,120"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="134,48,90,86,87,82,131,44"/>
+<area shape="rect" id="Node000009" href="$cheb3d_8h.html" title="Esta es la cabecera de la clase cheb3d, esta implementa una aproximación de chebyshev." alt="" coords="119,94,192,120"/>
+<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="158,46,158,78,153,78,153,46"/>
+<area shape="poly" id="edge6_Node000004_Node000002" title=" " alt="" coords="154,196,87,235,84,231,151,192"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="105,241,161,267"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="169,195,150,229,145,227,164,192"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="185,241,244,267"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="182,192,202,226,198,229,178,195"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="268,241,339,267"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="197,192,270,231,267,236,194,196"/>
+<area shape="poly" id="edge9_Node000008_Node000002" title=" " alt="" coords="64,120,56,226,51,226,59,120"/>
+<area shape="poly" id="edge10_Node000008_Node000004" title=" " alt="" coords="83,118,143,157,140,161,80,122"/>
+<area shape="poly" id="edge12_Node000009_Node000002" title=" " alt="" coords="149,122,71,230,67,227,145,118"/>
+<area shape="poly" id="edge13_Node000009_Node000004" title=" " alt="" coords="161,119,169,152,164,153,156,121"/>
+</map>

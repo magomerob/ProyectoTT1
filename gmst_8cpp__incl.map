@@ -1,0 +1,10 @@
+<map id="/github/workspace/src/gmst.cpp" name="/github/workspace/src/gmst.cpp">
+<area shape="rect" id="Node000001" title="Implementación del tiempo medio Greenwich Sidereal." alt="" coords="5,5,155,46"/>
+<area shape="rect" id="Node000002" href="$gmst_8h.html" title="Esta es la cabecera de la clase gmst, esta implementa el tiempo medio Greenwich Sidereal." alt="" coords="22,94,138,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="83,46,83,78,77,78,77,46"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="51,241,109,267"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="81,120,76,168,79,226,73,226,71,168,76,120"/>
+<area shape="rect" id="Node000004" href="$frac_8h.html" title="Esta es la cabecera de la clase frac, esta implementa un el cálculo de la parte fraccionaria de un nú..." alt="" coords="85,168,139,193"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="88,119,103,152,98,154,83,121"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="109,195,94,228,89,226,104,192"/>
+</map>
