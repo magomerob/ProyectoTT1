@@ -29,13 +29,13 @@
 
     Matrix r_bf = E * r;
     double d = norm(r_bf);
-
-    double latgc = asin(r_bf(3,1)/d);
-
-    double lon = atan2(r_bf(3,1),r_bf(1,1));
-
+    //cout<<"d"<<d<<endl;
+    double latgc = asin(r_bf(3,1)/d*1.0);
+    //cout<<"latgc"<<latgc<<endl;
+    double lon = atan2(r_bf(2,1)*1.0,r_bf(1,1)*1.0);
+    //cout<<"lon"<<lon<<endl;
     auto [pnm, dpnm] = legendre(n_max,m_max,latgc);
-
+    
     double dUdr = 0;
     double dUdlatgc = 0;
     double dUdlon = 0;

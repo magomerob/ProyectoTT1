@@ -33,6 +33,11 @@
 #include "../include/nutAngles.h"
 #include "../include/precMatrix.h"
 #include "../include/global.h"
+#include "../include/poleMatrix.h"
+#include "../include/nutMatrix.h"
+#include "../include/LTC.h"
+#include "../include/eqnEquinox.h"
+#include "../include/accelHarmonic.h"
 #include <cstdio>	
 #include <cmath>
 #include <tuple>
@@ -904,6 +909,77 @@ int test_jpl()
 	return 0;
 }
 
+int test_poleMatrix()
+{
+	Matrix A(3,3);
+	Matrix B(3,3);
+	A(1,1) = 0;A(1,2) = 1.0;A(1,3) = 0;
+	A(2,1) = 0;A(2,2) = 0;A(2,3) = -1.0;
+	A(3,1) = -1.0;A(3,2) = 0;A(3,3) = 0;
+
+	B = poleMatrix(M_PI/2,M_PI/2);
+
+	_assert(m_equals(A,B));
+
+	return 0;
+}
+
+int test_nutMatrix()
+{
+	Matrix A  = nutMatrix(50000);
+	Matrix B(3,3);
+	B(1,1)=0.999999999436159;B(1,2)=-3.08098181393545e-05;B(1,3)=-1.3358042226427e-05;
+	B(2,1)=3.08103201452149e-05;B(2,2)=0.99999999881915;B(2,3)=3.75822191258646e-05;
+	B(3,1)=1.33568843093166e-05;B(3,2)=-3.75826306702187e-05;B(3,3)=0.99999999920457;	
+
+	_assert(m_equals(A,B,1e-10));
+	return 0;
+}
+
+int test_LTC()
+{
+	Matrix A(3,3);
+	Matrix B(3,3);
+	A(1,1) = -1.22464679914735e-16;A(1,2) = -1;A(1,3) = 0;
+	A(2,1) = 1.22464679914735e-16;A(2,2) = -1.49975978266186e-32;A(2,3) = -1;
+	A(3,1) = 1.0;A(3,2) = -1.22464679914735e-16;A(3,3) = 1.22464679914735e-16;
+
+	B = LTC(M_PI,M_PI);
+
+	_assert(m_equals(A,B));
+
+	return 0;
+}
+
+int test_eqnEquinox()
+{
+	double a = eqnEquinox(50000);
+	_assert(fabs(a - 3.08098181451451e-05) < 1e-10);
+
+	return 0;
+}
+
+int test_accelHarmonic()
+{
+	Matrix r(3);
+	Matrix E(3,3);
+	r(1)=5;r(2)=5;r(3)=5;
+	E(1,1)=1;E(1,2)=4;E(1,3)=7;
+	E(2,1)=2;E(2,2)=5;E(2,3)=8;
+	E(3,1)=3;E(3,2)=6;E(3,3)=9;
+	
+	Matrix B = transpose(accelHarmonic(transpose(r),E,1,10))/1e+10;
+
+	Matrix A(3);
+	A(1)=-08.39013884498123;
+	A(2)=-20.18877159573608;
+	A(3)=-31.98740434649093;
+
+	_assert(m_equals(A,B));
+	
+	return 0;
+}
+
 int all_tests()
 {
 
@@ -954,7 +1030,12 @@ int all_tests()
 	_verify(test_gmst);
 	_verify(test_precMatrix);
 	_verify(test_jpl);
-    return 0;
+	_verify(test_poleMatrix);
+	_verify(test_nutMatrix);
+	_verify(test_LTC);
+	_verify(test_eqnEquinox);
+	_verify(test_accelHarmonic);
+	return 0;
 }
 
 int main()
