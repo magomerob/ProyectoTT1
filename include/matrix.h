@@ -226,7 +226,7 @@ Matrix& zeros(const int n);
 Matrix inv(const Matrix& matrix);
 
 /**
- * @brief Genera una matriz de unos con tamaño fil*col.
+ * @brief Genera una matriz con unos en la diagonal con tamaño fil*col.
  * 
  * @param fil Numero de filas de la matriz.
  * @param col Numero de columnas de la matriz.

@@ -12,24 +12,16 @@
 #ifndef _timediff_
 #define _timediff_
 
-/**
- * @brief Lista con los diferentes usos horarios.
- * 
- */
-struct TimeDifferences {
-    double UT1_TAI;
-    double UTC_GPS;
-    double UT1_GPS;
-    double TT_UTC;
-    double GPS_UTC;
-};
+#include <tuple>
+
+using namespace std;
 
 /**
  * @brief Función que devuelve las diferencias horarias.
  * 
  * @param UT1_UTC 
  * @param TAI_UTC 
- * @return TimeDifferences Diccionario con los resultados.
+ * @return tuple<double, double, double, double, double> Diccionario con los resultados.
  */
-TimeDifferences timediff(double UT1_UTC, double TAI_UTC);
+tuple<double, double, double, double, double> timediff(double UT1_UTC, double TAI_UTC);
 #endif

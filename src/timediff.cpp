@@ -12,7 +12,8 @@
 
 #include "../include/timediff.h"
 
-TimeDifferences timediff(double UT1_UTC, double TAI_UTC) {
+
+tuple<double, double, double, double, double> timediff(double UT1_UTC, double TAI_UTC) {
     const double TT_TAI  =  32.184;   // TT - TAI [s]
     const double GPS_TAI = -19.0;     // GPS - TAI [s]
 

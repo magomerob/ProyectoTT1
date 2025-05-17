@@ -326,7 +326,10 @@ Matrix& eye(const int fil, const int col) {
 	
 	for(size_t i = 1; i <= fil; i++) {
 		for(size_t j = 1; j <= col; j++) {
-			(*m_aux)(i,j) = 1;
+            if(i == j)
+                (*m_aux)(i,j) = 1;
+            else
+                (*m_aux)(i,j) = 0;
 		}
 	}
 	

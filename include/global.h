@@ -13,12 +13,17 @@
  #define _GLOBAL_
  #include <cmath>
  #include "matrix.h"
- 
+typedef struct {
+    double Mjd_UTC, Mjd_TT;
+    int n, m, sun, moon, planets;
+} Param;
 
 extern Matrix eopdata;
 extern Matrix PC;
+extern Param AuxParam;
 
 void eop19620101(int c);
 void DE430Coeff();
+void auxparam();
  #endif
  
