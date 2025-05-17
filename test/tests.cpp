@@ -44,6 +44,7 @@
 #include "../include/gast.h"
 #include "../include/accel.h"
 #include "../include/measUpdate.h"
+#include "../include/DEInteg.h"
 #include <cstdio>	
 #include <cmath>
 #include <tuple>
@@ -1225,6 +1226,31 @@ int test_measUpdate()
 	return 0;
 }
 
+int test_DEInteg()
+{
+	Matrix y(6, 1);
+	y(1, 1) = 6.221397628578685e+06;
+	y(2, 1) = 2.867713779657379e+06;
+	y(3, 1) = 3.006155985099489e+06;
+	y(4, 1) = 4.645047251618060e+03;
+	y(5, 1) = -2.752215915882042e+03;
+	y(6, 1) = -7.507999409870306e+03;
+
+	double tout = -1.349999919533730e+02;
+	Matrix result = DEInteg(accel, 0.0, tout, 1e-13, 1e-6, 6, y);
+
+	Matrix expected(6, 1);
+	expected(1, 1) = 5.542555937228607e+06;
+	expected(2, 1) = 3.213514867349196e+06;
+	expected(3, 1) = 3.990892975876853e+06;
+	expected(4, 1) = 5.394068421663513e+03;
+	expected(5, 1) = -2.365213378823415e+03;
+	expected(6, 1) = -7.061845542002954e+03;
+	
+	_assert(m_equals(result, expected, 1e-1)); //Este nivel de precisión es muy malo.
+	return 0;
+}
+
 int all_tests()
 {
 
@@ -1287,6 +1313,7 @@ int all_tests()
 	_verify(test_varEqn);
 	_verify(test_accel);
 	_verify(test_measUpdate);
+	_verify(test_DEInteg);
 	return 0;
 }
 

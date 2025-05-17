@@ -168,11 +168,14 @@ double& Matrix::operator()(const int i, const int j) const
 
 double& Matrix::operator()(const int n) const
 {
-    if (n <= 0 || n > this->col) {
+    if (n <= 0 || (n > this->col && n > this->fil)) {
 		cout << "Vector get: position out of bounds\n";
         exit(EXIT_FAILURE);
 	}
-    return matrix[0][n-1];
+    if(this->col == 1)
+        return matrix[n-1][0];
+    else
+        return matrix[0][n-1];
 }
 
 Matrix Matrix::operator/(const Matrix& matrix2)
@@ -277,7 +280,7 @@ Matrix Matrix::extract_row(const int row)
 
 Matrix Matrix::extract_column(const int column)
 {
-    if (column <= 0 || column > this->fil) {
+    if (column <= 0 || column > this->col) {
 		cout << "Column get: position out of bounds\n";
         exit(EXIT_FAILURE);
 	}
