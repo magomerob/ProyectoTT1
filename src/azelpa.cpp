@@ -18,6 +18,9 @@ using namespace std;
 
 tuple<double, double, Matrix, Matrix> azelpa(Matrix& s)
 {
+    if(s.fil>1){
+        s = transpose(s);
+    }
 
     const double pi2 = M_PI * 2.0;
 

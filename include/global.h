@@ -13,6 +13,9 @@
  #define _GLOBAL_
  #include <cmath>
  #include "matrix.h"
+ #include "mjday.h"
+ #include "sat_const.h"
+ #include <string.h>
 typedef struct {
     double Mjd_UTC, Mjd_TT;
     int n, m, sun, moon, planets;
@@ -21,9 +24,14 @@ typedef struct {
 extern Matrix eopdata;
 extern Matrix PC;
 extern Param AuxParam;
+extern Matrix Cnm;
+extern Matrix Snm;
+extern Matrix obs;
 
 void eop19620101(int c);
 void DE430Coeff();
 void auxparam();
+void GGM03S();
+void GEOS3();
  #endif
  

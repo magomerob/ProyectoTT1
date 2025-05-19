@@ -68,22 +68,22 @@ Matrix DEInteg(Matrix func(double t, Matrix y), double t, double tout, double re
     gstr(13) = 0.00524;
     gstr(14) = 0.00468;
 
-    Matrix yy    = zeros(n_eqn,1);    // Allocate vectors with proper dimension
-    Matrix wt    = zeros(n_eqn,1);
-    Matrix p     = zeros(n_eqn,1);
-    Matrix yp    = zeros(n_eqn,1);
-    Matrix phi   = zeros(n_eqn,17);
-    Matrix g     = zeros(14,1);
-    Matrix sig   = zeros(14,1);
-    Matrix rho   = zeros(14,1);
-    Matrix w     = zeros(13,1);
-    Matrix alpha = zeros(13,1);
-    Matrix beta  = zeros(13,1);
-    Matrix v     = zeros(13,1);
-    Matrix psi_  = zeros(13,1);
+    Matrix yy   (n_eqn,1);    // Allocate vectors with proper dimension
+    Matrix wt   (n_eqn,1);
+    Matrix p    (n_eqn,1);
+    Matrix yp   (n_eqn,1);
+    Matrix phi  (n_eqn,17);
+    Matrix g    (14,1);
+    Matrix sig  (14,1);
+    Matrix rho  (14,1);
+    Matrix w    (13,1);
+    Matrix alpha(13,1);
+    Matrix beta (13,1);
+    Matrix v    (13,1);
+    Matrix psi_ (13,1);
 
-    Matrix yout  = zeros(n_eqn,1);
-    Matrix ypout = zeros(n_eqn,1);
+    Matrix yout (n_eqn,1);
+    Matrix ypout(n_eqn,1);
 
     // while(true)
 
@@ -132,14 +132,15 @@ Matrix DEInteg(Matrix func(double t, Matrix y), double t, double tout, double re
         x      = t;
         yy     = y;
         delsgn = sign(1.0, del);
-        h      = sign( max(fouru*abs(x), abs(tout-x)), tout-x );
+        h      = sign( fmax(fouru*fabs(x), fabs(tout-x)), tout-x );
     }
 
     while (true){   // Start step loop
 
     // If already past output point, interpolate solution and return y
-    if (abs(x-t) >= absdel){
-        
+    if (fabs(x-t) >= absdel){
+        yout  = zeros(n_eqn,1);
+        ypout = zeros(n_eqn,1);
         g(2)   = 1.0;
         rho(2) = 1.0;
         hi = tout - x;
@@ -156,7 +157,7 @@ Matrix DEInteg(Matrix func(double t, Matrix y), double t, double tout, double re
             psijm1 = psi_(j);
             gamma = (hi + term)/psijm1;
             eta = hi/psijm1;
-            for(size_t i=1; i <= ki+1-j; i++){
+            for(int i=1; i <= ki+1-j; i++){
                 w(i+1) = gamma*w(i+1) - eta*w(i+2);
             }
             g(j+1) = w(2);
@@ -207,9 +208,9 @@ Matrix DEInteg(Matrix func(double t, Matrix y), double t, double tout, double re
     //   end
     
     // Limit step size, set weight vector and take a step
-    h  = sign(min(abs(h), abs(tend-x)), h);
+    h  = sign(fmin(fabs(h), fabs(tend-x)), h);
     for (int l=1; l<=n_eqn; l++){
-        wt(l) = releps*abs(yy(l)) + abseps;
+        wt(l) = releps*fabs(yy(l)) + abseps;
     }
     
     //   Step
@@ -222,7 +223,7 @@ Matrix DEInteg(Matrix func(double t, Matrix y), double t, double tout, double re
     // acceptable one.                                                   
     //                                                                   
 
-    if (abs(h) < fouru*abs(x)){
+    if (fabs(h) < fouru*fabs(x)){
         h = sign(fouru*abs(x),h);
         crash = true;
         return y;           // Exit 
@@ -264,7 +265,7 @@ Matrix DEInteg(Matrix func(double t, Matrix y), double t, double tout, double re
     if (epsilon<16.0*sum*h*h){
         absh=0.25*sqrt(epsilon/sum);
     }
-    h    = sign(max(absh, fouru*abs(x)), h);
+    h    = sign(fmax(absh, fouru*fabs(x)), h);
     hold = 0.0;
     hnew = 0.0;
     k    = 1;
@@ -425,7 +426,7 @@ Matrix DEInteg(Matrix func(double t, Matrix y), double t, double tout, double re
     }
     xold = x;
     x = x + h;
-    absh = abs(h);
+    absh = fabs(h);
     yp = func(x,p);
     
     // Estimate errors at orders k, k-1, k-2 
@@ -461,7 +462,7 @@ Matrix DEInteg(Matrix func(double t, Matrix y), double t, double tout, double re
     
     // Test if order should be lowered 
     if (km2 >0){
-        if (max(erkm1,erkm2)<=erk){
+        if (fmax(erkm1,erkm2)<=erk){
             knew=km1;
         }
     }
@@ -526,9 +527,9 @@ Matrix DEInteg(Matrix func(double t, Matrix y), double t, double tout, double re
         }
         h = temp2*h;
         k = knew;
-        if (abs(h)<fouru*abs(x)){
+        if (fabs(h)<fouru*fabs(x)){
             crash = true;
-            h = sign(fouru*abs(x), h);
+            h = sign(fouru*fabs(x), h);
             epsilon = epsilon*2.0;
             return y;                 // Exit 
         }
@@ -608,7 +609,7 @@ Matrix DEInteg(Matrix func(double t, Matrix y), double t, double tout, double re
                 // Using estimated error at order k+1, determine 
                 // appropriate order for next step               
                 if (k>1){
-                    if ( erkm1<=min(erk,erkp1)){
+                    if ( erkm1<=fmin(erk,erkp1)){
                         // lower order
                         k=km1; erk=erkm1;
                     }else{
@@ -637,8 +638,8 @@ Matrix DEInteg(Matrix func(double t, Matrix y), double t, double tout, double re
         if (p5eps<erk){
             temp2 = k+1;
             r = p5eps/pow(erk,(1.0/temp2));
-            hnew = absh*max(0.5, min(0.9,r));
-            hnew = sign(max(hnew, fouru*abs(x)), h);
+            hnew = absh*fmax(0.5, fmin(0.9,r));
+            hnew = sign(fmax(hnew, fouru*fabs(x)), h);
         }else{
             hnew = h;
         }

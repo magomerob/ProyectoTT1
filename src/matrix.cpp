@@ -106,6 +106,9 @@ Matrix::~Matrix()
  
 Matrix& Matrix::operator=(const Matrix& matrix2)
 {
+    this->fil = matrix2.fil;
+    this->col = matrix2.col;
+    initMatrix();
     for (int i = 0; i < fil; i++)
         for (int j = 0; j < col; j++)
             this->matrix[i][j] = matrix2.matrix[i][j];

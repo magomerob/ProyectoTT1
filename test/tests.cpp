@@ -1239,6 +1239,8 @@ int test_DEInteg()
 	double tout = -1.349999919533730e+02;
 	Matrix result = DEInteg(accel, 0.0, tout, 1e-13, 1e-6, 6, y);
 
+	cout<<result<<endl;
+
 	Matrix expected(6, 1);
 	expected(1, 1) = 5.542555937228607e+06;
 	expected(2, 1) = 3.213514867349196e+06;
@@ -1247,7 +1249,7 @@ int test_DEInteg()
 	expected(5, 1) = -2.365213378823415e+03;
 	expected(6, 1) = -7.061845542002954e+03;
 	
-	_assert(m_equals(result, expected, 1e-1)); //Este nivel de precisión es muy malo.
+	_assert(m_equals(result, expected, 1e-6)); //Este nivel de precisión es muy malo.
 	return 0;
 }
 

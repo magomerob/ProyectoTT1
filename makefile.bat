@@ -1,5 +1,5 @@
-g++ test/main.cpp src/*.cpp -lm -o bin/main.exe
+g++ test/EKF_GEOS3.cpp src/*.cpp -lm -o bin/EKF_GEOS3.exe
 
 cd bin
-main.exe
+EKF_GEOS3.exe
 pause
