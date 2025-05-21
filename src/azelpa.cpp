@@ -18,37 +18,34 @@ using namespace std;
 
 tuple<double, double, Matrix, Matrix> azelpa(Matrix& s)
 {
-    if(s.fil>1){
-        s = transpose(s);
-    }
-
-    const double pi2 = M_PI * 2.0;
-
     double rho = sqrt(s(1)*s(1)+s(2)*s(2));
 
     // Angles
     double Az = atan2(s(1),s(2));
-    if (Az < 0.0) {
-        Az += pi2;
+
+    double pi2 = M_PI*2;
+
+    if (Az<0.0){ 
+        Az = Az+pi2;
     }
 
     double El = atan ( s(3) / rho );
 
     // Partials
-    Matrix dAds(3);
-    dAds(1) = s(2) / (rho * rho);
-    dAds(1) = -s(1) / (rho * rho);
-    dAds(2) = 0.0;
-    
-    Matrix dEds(3);
+    Matrix &dAds = zeros(3);
+    dAds(1) = s(2)/(rho*rho);
+    dAds(2) = -s(1)/(rho*rho);
+    dAds(3) = 0.0;
+	
+    Matrix &dEds = zeros(3);
     dEds(1) = -s(1)*s(3)/rho;
-    dEds(1) = -s(2)*s(3)/rho;
-    dEds(2) = rho;
-    
-    Matrix s2(s);
+    dEds(2) = -s(2)*s(3)/rho;
+    dEds(3) = rho;
 
-    dEds = dEds / dot(s2,s2);
+    if(s.fil>1){
+        s = transpose(s);
+    }
+    dEds = dEds / dot(s,s);
 
-    
-    return make_tuple(Az, El, dAds, dEds);
+    return tie(Az, El, dAds, dEds);
 }

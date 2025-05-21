@@ -16,21 +16,25 @@ Matrix accel(double x, Matrix y)
 {
     auto [x_pole,y_pole,UT1_UTC,LOD,dpsi,deps,dx_pole,dy_pole,TAI_UTC] = iers(eopdata,AuxParam.Mjd_UTC + x/86400,'l');
     auto [UT1_TAI,UTC_GPS,UT1_GPS,TT_UTC,GPS_UTC] = timediff(UT1_UTC,TAI_UTC);
-    double Mjd_UT1 = AuxParam.Mjd_UTC + x/86400 + UT1_UTC/86400;
-    double Mjd_TT = AuxParam.Mjd_UTC + x/86400 + TT_UTC/86400;
-
+    long double Mjd_UT1 = AuxParam.Mjd_UTC + x/86400 + UT1_UTC/86400;
+    long double Mjd_TT = AuxParam.Mjd_UTC + x/86400 + TT_UTC/86400;
+    
     Matrix P = precMatrix(SAT_Const::MJD_J2000,Mjd_TT);
+    
     Matrix N = nutMatrix(Mjd_TT);
+    
     Matrix T = N * P;
+    
     Matrix E = poleMatrix(x_pole,y_pole) * GHAMatrix(Mjd_UT1) * T;
 
-    double MJD_TDB = Mjd_TDB(Mjd_TT);
+    long double MJD_TDB = Mjd_TDB(Mjd_TT);
     auto [r_Mercury,r_Venus,r_Earth,r_Mars,r_Jupiter,r_Saturn,r_Uranus, r_Neptune,r_Pluto,r_Moon,r_Sun] = JPL_Eph(MJD_TDB);
 
     // Acceleration due to harmonic gravity field
     Matrix v = transpose(extract_vector(transpose(y),1,3));
+    
     Matrix a = accelHarmonic(v, E, AuxParam.n, AuxParam.m);
-
+    //cout<<"a:"<<endl<<a<<endl;
     // Luni-solar perturbations
     Matrix vt = transpose(v);
     if (AuxParam.sun){
@@ -53,7 +57,7 @@ Matrix accel(double x, Matrix y)
         a = a + transpose(AccelPointMass(vt,r_Neptune,SAT_Const::GM_Neptune));
         a = a + transpose(AccelPointMass(vt,r_Pluto,SAT_Const::GM_Pluto));
     }
-    
+
     Matrix v2 = extract_vector(transpose(y),4,6);
 
     return transpose(union_vector(v2,transpose(a)));

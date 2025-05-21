@@ -68,6 +68,7 @@ int main(){
     % [r2,v2] = anglesdr(obs(1,2),obs(9,2),obs(18,2),obs(1,3),obs(9,3),obs(18,3),...
     %                    Mjd1,Mjd2,Mjd3,Rs,Rs,Rs);
     */
+
     Matrix Y0_apr = transpose(union_vector(transpose(r2),transpose(v2)));
 
     Mjd0 = Mjday(1995,1,29,02,38,0);
@@ -83,7 +84,11 @@ int main(){
 
     n_eqn  = 6;
 
+    //cout<<"Y0_apr: "<<Y0_apr<<endl;
+
     Matrix Y = DEInteg(accel,0,-(obs(9,1)-Mjd0)*86400.0,1e-13,1e-6,6,Y0_apr);
+
+    //cout<<"Y: "<<Y<<endl;
 
     Matrix P(6,6);
     
@@ -130,15 +135,18 @@ int main(){
             }
         }
         
+        //cout<<"yPhi "<<endl<<yPhi<<endl;
         yPhi = DEInteg (varEqn,0,t-t_old,1e-13,1e-6,42,yPhi);
+        //cout<<"yPhi "<<endl<<yPhi<<endl;
         
-        // Extract state transition matrices
+        //Extract state transition matrices
         for(int j=1; j<=6; j++){
             Phi.assign_column(extract_vector(transpose(yPhi),6*j+1,6*j+6),j);
         }
+        //cout<<"Phi "<<endl<<Phi<<endl;
         
         Y = DEInteg (accel,0,t-t_old,1e-13,1e-6,6,Y_old);
-        
+        //cout<<"Y "<<endl<<Y<<endl;
         // Topocentric coordinates
         theta = gmst(Mjd_UT1);                    // Earth rotation
         Matrix U = r_z(theta);
@@ -147,15 +155,20 @@ int main(){
         
         // Time update
         P = TimeUpdate(P, Phi);
-            
         // Azimuth and partials
         auto [Azim, Elev, dAds, dEds] = azelpa(s);     // Azimuth, Elevation
         Matrix tmp = dAds*LT*U;
         Matrix dAdY = union_vector(tmp,zeros(1,3));
         
         // Measurement update
+        //cout<<"Y "<<endl<<Y<<endl;
+        //cout<<"P "<<endl<<P<<endl;
         tie(K, Y, P) = measUpdate ( Y, obs(i,2), Azim, sigma_az, dAdY, P, 6 );
-        
+        //cout<<"K "<<endl<<K<<endl;
+        //cout<<"Y "<<endl<<Y<<endl;
+        //cout<<"P "<<endl<<P<<endl;
+        //return 0;
+
         // Elevation and partials
         r = transpose(extract_vector(transpose(Y),1,3));
         s = LT*(U*r-Rs);                          // Topocentric position [m]
@@ -164,6 +177,7 @@ int main(){
         Matrix dEdY = union_vector(tmp,zeros(1,3));
         
         // Measurement update
+        //cout<<"Y "<<endl<<Y<<endl;
         tie(K, Y, P) = measUpdate ( Y, obs(i,3), Elev, sigma_el, dEdY, P, 6 );
         
         // Range and partials
@@ -176,6 +190,7 @@ int main(){
         
         // Measurement update
         tie(K, Y, P) = measUpdate ( Y, obs(i,4), Dist, sigma_range, dDdY, P, 6 );
+        //cout<<"Y "<<endl<<Y<<endl;
     }
 
     auto [x_pole,y_pole,UT1_UTC,LOD,dpsi,deps,dx_pole,dy_pole,TAI_UTC] = iers(eopdata,obs(46,1),'l');
@@ -183,8 +198,9 @@ int main(){
     Mjd_TT = Mjd_UTC + TT_UTC/86400;
     AuxParam.Mjd_UTC = Mjd_UTC;
     AuxParam.Mjd_TT = Mjd_TT;
-
+    //cout<<"Y: "<<Y<<endl;
     Matrix Y0 = DEInteg (accel,0,-(obs(46,1)-obs(1,1))*86400.0,1e-13,1e-6,6,Y);
+    //cout<<"Y0: "<<Y0<<endl;
 
     Matrix Y_true(6,1);
     Y_true(1,1) = 5753.173e3;

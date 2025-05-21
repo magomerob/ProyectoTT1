@@ -332,13 +332,13 @@ Matrix& eye(const int fil, const int col) {
 	
 	for(size_t i = 1; i <= fil; i++) {
 		for(size_t j = 1; j <= col; j++) {
-            if(i == j)
+            if(i == j){
                 (*m_aux)(i,j) = 1;
-            else
+            }else{
                 (*m_aux)(i,j) = 0;
+        }
 		}
-	}
-	
+	}	
 	return (*m_aux);
 } 
 
@@ -419,11 +419,11 @@ double norm(Matrix& vec)
     double sum = 0.0;
     if (vec.fil == 1) {
         for (size_t i = 1; i <= vec.col; i++) {
-            sum += pow(vec(1, i), 2);
+            sum += vec(1, i) * vec(1, i);
         }
     } else {
         for (size_t i = 1; i <= vec.fil; i++) {
-            sum += pow(vec(i, 1), 2);
+            sum += vec(i, 1) * vec(i, 1);
         }
     }
 

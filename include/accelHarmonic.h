@@ -16,6 +16,7 @@
  #include <cmath>
  #include "matrix.h"
  #include "legendre.h"
+ #include "global.h"
 
  /**
   * @brief Calcula la aceleración perturbacional dado un punto de masa.

@@ -19,11 +19,11 @@ Matrix varEqn(double x, Matrix yPhi)
 
     auto [x_pole,y_pole,UT1_UTC,LOD,dpsi,deps,dx_pole,dy_pole,TAI_UTC] = iers(eopdata,AuxParam.Mjd_UTC,'l');
     auto [UT1_TAI,UTC_GPS,UT1_GPS,TT_UTC,GPS_UTC] = timediff(UT1_UTC,TAI_UTC);
-    double Mjd_UT1 = AuxParam.Mjd_TT + (UT1_UTC-TT_UTC)/86400;
+    double Mjd_UT1 = AuxParam.Mjd_TT + (UT1_UTC-TT_UTC)/86400.0;
 
     // Transformation matrix
-    Matrix P = precMatrix(SAT_Const::MJD_J2000,AuxParam.Mjd_TT + x/86400);
-    Matrix N = nutMatrix(AuxParam.Mjd_TT + x/86400);
+    Matrix P = precMatrix(SAT_Const::MJD_J2000,AuxParam.Mjd_TT + x/86400.0);
+    Matrix N = nutMatrix(AuxParam.Mjd_TT + x/86400.0);
     Matrix T = N * P;
     Matrix E = poleMatrix(x_pole,y_pole) * GHAMatrix(Mjd_UT1) * T;
 
@@ -36,7 +36,7 @@ Matrix varEqn(double x, Matrix yPhi)
     for(size_t j=1; j<=6; j++){
         Phi.assign_column(extract_vector(tyPhi,6*j+1,6*j+6),j);
     }
-
+    
     // Acceleration and gradient
     Matrix a = accelHarmonic ( transpose(r), E, AuxParam.n, AuxParam.m );
     Matrix G = g_accelHarmonic ( transpose(r), E, AuxParam.n, AuxParam.m );

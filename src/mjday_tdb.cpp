@@ -15,7 +15,7 @@
 double Mjd_TDB(double Mjd_TT)
 {
 
-    double T_TT = (Mjd_TT - 51544.5)/36525;
+    double T_TT = (Mjd_TT - 51544.5)/36525.0;
 
     double ret = Mjd_TT + ( 0.001658*sin(628.3076*T_TT + 6.2401)
                  +   0.000022*sin(575.3385*T_TT+4.2970)
