@@ -1,0 +1,35 @@
+<map id="/github/workspace/include/g_accelHarmonic.h" name="/github/workspace/include/g_accelHarmonic.h">
+<area shape="rect" id="Node000001" title="Esta es la cabecera de la clase g_accelHarmonic, esta calcula el gradiente del campo gravitacional ar..." alt="" coords="93,5,265,46"/>
+<area shape="rect" id="Node000002" href="$matrix_8h.html" title="Esta es la cabecera de la clase Matriz, esta implementa este objeto en C++." alt="" coords="82,241,148,267"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,47,125,227,120,225,171,46"/>
+<area shape="rect" id="Node000007" href="$accelHarmonic_8h.html" title="Esta es la cabecera de la clase accelHarmonic, esta implementa este objeto en C++." alt="" coords="184,94,302,120"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="197,45,226,80,221,83,193,48"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,315,62,341"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="103,270,60,307,57,303,99,266"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="85,315,144,341"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="118,267,118,299,112,299,112,267"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="352,315,409,341"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="149,262,337,312,336,317,148,267"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="168,315,240,341"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="132,265,179,303,176,307,128,270"/>
+<area shape="poly" id="edge8_Node000007_Node000002" title=" " alt="" coords="234,122,138,231,134,228,230,118"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="303,108,375,117,458,139,499,156,537,178,572,206,600,240,608,263,601,283,582,298,555,309,489,322,424,328,424,323,488,317,554,304,579,293,597,280,603,263,595,243,568,210,534,182,497,161,456,144,374,122,302,113"/>
+<area shape="rect" id="Node000008" href="$legendre_8h.html" title="Esta es la cabecera de la función legendre, esta calcula dichos polinomios." alt="" coords="203,168,283,193"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="246,120,246,152,240,152,240,120"/>
+<area shape="rect" id="Node000010" href="$global_8h.html" title="Esta es la cabecera de la clase global." alt="" coords="353,168,418,193"/>
+<area shape="poly" id="edge13_Node000007_Node000010" title=" " alt="" coords="268,118,349,158,346,163,266,123"/>
+<area shape="poly" id="edge11_Node000008_Node000002" title=" " alt="" coords="222,196,151,236,149,231,220,192"/>
+<area shape="poly" id="edge10_Node000008_Node000005" title=" " alt="" coords="249,192,263,227,288,265,313,288,341,305,338,310,310,292,283,269,258,230,244,194"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="172,241,221,267"/>
+<area shape="poly" id="edge12_Node000008_Node000009" title=" " alt="" coords="237,195,215,230,210,227,233,192"/>
+<area shape="poly" id="edge15_Node000010_Node000002" title=" " alt="" coords="353,193,164,243,162,238,352,188"/>
+<area shape="poly" id="edge14_Node000010_Node000005" title=" " alt="" coords="419,182,477,189,538,204,562,215,579,229,586,247,577,268,562,285,545,298,505,316,463,326,425,330,424,324,462,321,503,311,542,293,559,281,573,266,580,247,575,233,560,220,536,209,476,194,418,187"/>
+<area shape="rect" id="Node000011" href="$mjday_8h.html" title="Esta es la cabecera de la clase mjday, esta implementa un el cálculo de la fecha juliana." alt="" coords="297,241,362,267"/>
+<area shape="poly" id="edge16_Node000010_Node000011" title=" " alt="" coords="378,195,350,231,346,227,374,192"/>
+<area shape="rect" id="Node000012" href="$sat__const_8h.html" title="Esta es la cabecera de la clase SAT_Const, esta recoge las constantes usadas en el resto de programas..." alt="" coords="387,241,475,267"/>
+<area shape="poly" id="edge18_Node000010_Node000012" title=" " alt="" coords="395,192,417,227,413,230,391,195"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="499,241,562,267"/>
+<area shape="poly" id="edge20_Node000010_Node000013" title=" " alt="" coords="411,191,494,232,491,236,409,196"/>
+<area shape="poly" id="edge17_Node000011_Node000005" title=" " alt="" coords="340,266,365,301,361,304,336,269"/>
+<area shape="poly" id="edge19_Node000012_Node000005" title=" " alt="" coords="425,269,400,304,395,301,420,266"/>
+</map>

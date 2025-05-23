@@ -1,0 +1,35 @@
+<map id="/github/workspace/include/frac.h" name="/github/workspace/include/frac.h">
+<area shape="rect" id="Node000001" title="Esta es la cabecera de la clase frac, esta implementa un el cálculo de la parte fraccionaria de un nú..." alt="" coords="92,5,265,46"/>
+<area shape="rect" id="Node000002" href="$gmst_8h.html" title="Esta es la cabecera de la clase gmst, esta implementa el tiempo medio Greenwich Sidereal." alt="" coords="92,94,265,135"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,62,181,94,176,94,176,62"/>
+<area shape="rect" id="Node000008" href="$tests_8cpp.html" title="Archivo que contiene todos los test." alt="" coords="233,449,386,489"/>
+<area shape="poly" id="edge19_Node000001_Node000008" title=" " alt="" coords="125,56,85,82,47,115,31,134,19,155,11,178,8,202,8,293,14,329,30,359,55,384,86,406,122,423,160,437,233,455,232,460,158,442,120,428,84,410,52,389,26,362,9,330,3,293,3,202,6,176,14,153,27,131,43,111,82,77,122,52"/>
+<area shape="rect" id="Node000014" href="$frac_8cpp.html" title="Implementación el calculo de la parte fraccionaria." alt="" coords="289,94,439,135"/>
+<area shape="poly" id="edge18_Node000001_Node000014" title=" " alt="" coords="236,50,323,91,321,96,233,55"/>
+<area shape="rect" id="Node000003" href="$gast_8h.html" title="Esta es la cabecera de la clase gast, esta calcula el Tiempo sideral aparente de Greenwich." alt="" coords="287,183,460,223"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="238,139,330,180,328,185,236,144"/>
+<area shape="poly" id="edge17_Node000002_Node000008" title=" " alt="" coords="194,148,206,182,305,447,300,449,202,184,189,150"/>
+<area shape="rect" id="Node000013" href="$gmst_8cpp.html" title="Implementación del tiempo medio Greenwich Sidereal." alt="" coords="43,183,192,223"/>
+<area shape="poly" id="edge16_Node000002_Node000013" title=" " alt="" coords="158,149,133,184,129,181,154,146"/>
+<area shape="rect" id="Node000004" href="$ghaMatrix_8h.html" title="Esta es la cabecera de la clase ghaMatrix, esta calcula la transformación del ecuador verdadero y equ..." alt="" coords="491,271,664,312"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="434,227,532,268,530,273,432,232"/>
+<area shape="poly" id="edge15_Node000003_Node000008" title=" " alt="" coords="335,236,319,253,308,272,296,320,294,369,299,413,307,448,301,449,294,414,289,369,291,319,303,270,315,250,331,232"/>
+<area shape="rect" id="Node000012" href="$gast_8cpp.html" title="Implementación de gast." alt="" coords="317,271,467,312"/>
+<area shape="poly" id="edge14_Node000003_Node000012" title=" " alt="" coords="383,238,390,270,385,271,378,239"/>
+<area shape="rect" id="Node000005" href="$accel_8h.html" title="Esta es la cabecera de la clase accel, esta calcula la aceleración de la tierra orbitando un satélite..." alt="" coords="542,360,714,401"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="599,324,619,358,614,361,594,327"/>
+<area shape="poly" id="edge13_Node000004_Node000008" title=" " alt="" coords="477,317,406,338,377,350,358,362,341,382,329,405,315,449,310,447,324,403,337,379,354,358,375,345,404,333,476,312"/>
+<area shape="rect" id="Node000009" href="$varEqn_8h.html" title="Esta es la cabecera de la clase poleMatrix, esta calcula la Transformación del sistema del meridiano ..." alt="" coords="738,360,910,401"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="648,315,769,357,767,362,647,320"/>
+<area shape="rect" id="Node000011" href="$ghaMatrix_8cpp.html" title="Implementación de ghaMatrix." alt="" coords="368,360,517,401"/>
+<area shape="poly" id="edge12_Node000004_Node000011" title=" " alt="" coords="536,323,475,362,472,357,533,318"/>
+<area shape="rect" id="Node000006" href="$accel_8cpp.html" title="Implementación de la aceleración." alt="" coords="419,449,568,489"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="586,411,525,450,522,446,583,407"/>
+<area shape="rect" id="Node000007" href="$EKF__GEOS3_8cpp.html" title="Archivo principal." alt="" coords="593,449,746,489"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="646,414,662,447,658,449,641,416"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="542,408,382,451,381,446,540,403"/>
+<area shape="poly" id="edge10_Node000009_Node000007" title=" " alt="" coords="777,411,706,451,703,446,775,406"/>
+<area shape="poly" id="edge11_Node000009_Node000008" title=" " alt="" coords="723,404,564,428,407,451,387,455,386,450,406,446,563,422,722,399"/>
+<area shape="rect" id="Node000010" href="$varEqn_8cpp.html" title="Implementación de varEqn." alt="" coords="771,449,920,489"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="835,415,843,448,838,449,830,417"/>
+</map>

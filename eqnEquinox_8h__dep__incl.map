@@ -1,0 +1,30 @@
+<map id="/github/workspace/include/eqnEquinox.h" name="/github/workspace/include/eqnEquinox.h">
+<area shape="rect" id="Node000001" title="Esta es la cabecera de la clase poleMatrix, esta calcula la ecuación de los equinoccios." alt="" coords="601,5,774,46"/>
+<area shape="rect" id="Node000002" href="$gast_8h.html" title="Esta es la cabecera de la clase gast, esta calcula el Tiempo sideral aparente de Greenwich." alt="" coords="459,94,631,135"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="644,56,578,96,576,91,641,52"/>
+<area shape="rect" id="Node000007" href="$tests_8cpp.html" title="Archivo que contiene todos los test." alt="" coords="555,360,708,401"/>
+<area shape="poly" id="edge16_Node000001_Node000007" title=" " alt="" coords="688,62,678,174,655,313,641,361,636,359,650,311,672,174,683,62"/>
+<area shape="rect" id="Node000012" href="$eqnEquinox_8cpp.html" title="Implementación de eqnEquinox." alt="" coords="725,94,874,135"/>
+<area shape="poly" id="edge15_Node000001_Node000012" title=" " alt="" coords="726,53,776,91,773,96,723,58"/>
+<area shape="rect" id="Node000003" href="$ghaMatrix_8h.html" title="Esta es la cabecera de la clase ghaMatrix, esta calcula la transformación del ecuador verdadero y equ..." alt="" coords="253,183,426,223"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="485,143,387,185,385,180,483,139"/>
+<area shape="poly" id="edge14_Node000002_Node000007" title=" " alt="" coords="585,144,601,161,614,182,630,230,637,279,638,325,636,360,631,359,633,325,632,280,625,231,609,184,597,164,581,147"/>
+<area shape="rect" id="Node000011" href="$gast_8cpp.html" title="Implementación de gast." alt="" coords="450,183,600,223"/>
+<area shape="poly" id="edge13_Node000002_Node000011" title=" " alt="" coords="539,150,532,183,527,182,534,149"/>
+<area shape="rect" id="Node000004" href="$accel_8h.html" title="Esta es la cabecera de la clase accel, esta calcula la aceleración de la tierra orbitando un satélite..." alt="" coords="5,271,178,312"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="270,231,149,273,147,268,268,226"/>
+<area shape="poly" id="edge12_Node000003_Node000007" title=" " alt="" coords="440,225,512,246,562,269,584,290,602,314,626,358,621,361,598,317,580,293,559,274,510,251,439,230"/>
+<area shape="rect" id="Node000008" href="$varEqn_8h.html" title="Esta es la cabecera de la clase poleMatrix, esta calcula la Transformación del sistema del meridiano ..." alt="" coords="376,271,548,312"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="381,230,436,269,433,273,378,235"/>
+<area shape="rect" id="Node000010" href="$ghaMatrix_8cpp.html" title="Implementación de ghaMatrix." alt="" coords="202,271,352,312"/>
+<area shape="poly" id="edge11_Node000003_Node000010" title=" " alt="" coords="319,237,293,272,289,269,314,234"/>
+<area shape="rect" id="Node000005" href="$accel_8cpp.html" title="Implementación de la aceleración." alt="" coords="17,360,166,401"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="94,328,94,360,89,360,89,328"/>
+<area shape="rect" id="Node000006" href="$EKF__GEOS3_8cpp.html" title="Archivo principal." alt="" coords="199,360,352,401"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="148,316,235,357,233,362,146,321"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="193,310,370,333,543,357,555,360,554,365,542,363,369,338,193,315"/>
+<area shape="poly" id="edge9_Node000008_Node000006" title=" " alt="" coords="407,321,319,362,317,357,405,316"/>
+<area shape="poly" id="edge10_Node000008_Node000007" title=" " alt="" coords="515,317,594,357,592,362,513,322"/>
+<area shape="rect" id="Node000009" href="$varEqn_8cpp.html" title="Implementación de varEqn." alt="" coords="381,360,530,401"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="462,328,460,360,454,359,457,327"/>
+</map>

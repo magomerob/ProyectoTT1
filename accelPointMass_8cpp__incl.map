@@ -1,0 +1,16 @@
+<map id="/github/workspace/src/accelPointMass.cpp" name="/github/workspace/src/accelPointMass.cpp">
+<area shape="rect" id="Node000001" title="Implementación de la aceleración respecto a un punto de masa." alt="" coords="20,5,170,46"/>
+<area shape="rect" id="Node000002" href="$accelPointMass_8h.html" title="Esta es la cabecera de la clase accelPointMass, esta implementa este objeto en C++." alt="" coords="5,94,185,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,46,98,78,92,78,92,46"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="26,241,84,267"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="94,121,65,227,60,226,89,119"/>
+<area shape="rect" id="Node000004" href="$matrix_8h.html" title="Esta es la cabecera de la clase Matriz, esta implementa este objeto en C++." alt="" coords="103,168,170,193"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="104,119,124,153,119,156,100,121"/>
+<area shape="poly" id="edge6_Node000004_Node000003" title=" " alt="" coords="124,196,82,233,78,229,121,192"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="108,241,164,267"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="139,194,139,226,134,226,134,194"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="188,241,247,267"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="152,192,194,229,191,233,148,196"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="271,241,343,267"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="166,191,265,233,263,237,164,196"/>
+</map>

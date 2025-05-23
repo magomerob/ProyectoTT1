@@ -1,0 +1,10 @@
+<map id="/github/workspace/src/meanObliquity.cpp" name="/github/workspace/src/meanObliquity.cpp">
+<area shape="rect" id="Node000001" title="Implementación el calculo de la obliquidad media." alt="" coords="104,5,254,46"/>
+<area shape="rect" id="Node000002" href="$meanObliquity_8h.html" title="Esta es la cabecera de la clase meanObliquity, esta implementa un el cálculo de la obliquidad media d..." alt="" coords="5,94,174,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,48,116,86,113,82,155,44"/>
+<area shape="rect" id="Node000004" href="$sat__const_8h.html" title="Esta es la cabecera de la clase SAT_Const, esta recoge las constantes usadas en el resto de programas..." alt="" coords="198,94,341,120"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="203,44,246,82,242,86,199,48"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="150,168,208,193"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="106,118,154,156,150,160,103,122"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="256,122,207,160,204,156,252,118"/>
+</map>

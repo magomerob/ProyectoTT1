@@ -1,0 +1,33 @@
+<map id="/github/workspace/include/gast.h" name="/github/workspace/include/gast.h">
+<area shape="rect" id="Node000001" title="Esta es la cabecera de la clase gast, esta calcula el Tiempo sideral aparente de Greenwich." alt="" coords="5,5,178,46"/>
+<area shape="rect" id="Node000002" href="$gmst_8h.html" title="Esta es la cabecera de la clase gmst, esta implementa el tiempo medio Greenwich Sidereal." alt="" coords="61,168,122,193"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,46,94,152,89,152,89,46"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="162,315,219,341"/>
+<area shape="poly" id="edge18_Node000001_Node000003" title=" " alt="" coords="83,47,71,76,58,112,50,152,51,193,58,232,65,248,77,265,111,292,148,310,146,315,108,297,74,269,60,251,53,234,46,194,45,152,53,110,66,74,79,45"/>
+<area shape="rect" id="Node000005" href="$eqnEquinox_8h.html" title="Esta es la cabecera de la clase poleMatrix, esta calcula la ecuación de los equinoccios." alt="" coords="188,94,286,120"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="129,44,203,84,200,89,127,49"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="90,194,83,228,84,248,90,266,101,280,115,293,148,311,146,316,112,297,97,284,85,268,78,249,78,228,85,193"/>
+<area shape="rect" id="Node000004" href="$frac_8h.html" title="Esta es la cabecera de la clase frac, esta implementa un el cálculo de la parte fraccionaria de un nú..." alt="" coords="100,241,153,267"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="100,192,116,226,111,228,95,195"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="139,265,171,302,167,305,135,269"/>
+<area shape="poly" id="edge17_Node000005_Node000003" title=" " alt="" coords="235,121,219,168,205,239,196,300,191,299,200,238,214,167,230,119"/>
+<area shape="rect" id="Node000006" href="$nutAngles_8h.html" title="Esta es la cabecera de la función NutAngles, esta calcula la nutación." alt="" coords="366,168,455,193"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="267,118,368,159,366,164,265,123"/>
+<area shape="rect" id="Node000013" href="$meanObliquity_8h.html" title="Esta es la cabecera de la clase meanObliquity, esta implementa un el cálculo de la obliquidad media d..." alt="" coords="228,168,342,193"/>
+<area shape="poly" id="edge15_Node000005_Node000013" title=" " alt="" coords="247,118,270,153,266,156,243,121"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="393,196,318,244,222,308,219,304,315,239,390,192"/>
+<area shape="rect" id="Node000007" href="$matrix_8h.html" title="Esta es la cabecera de la clase Matriz, esta implementa este objeto en C++." alt="" coords="329,241,395,267"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="404,195,381,230,377,227,400,192"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="420,241,518,267"/>
+<area shape="poly" id="edge13_Node000006_Node000011" title=" " alt="" coords="422,192,451,228,447,231,418,195"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="542,241,591,267"/>
+<area shape="poly" id="edge14_Node000006_Node000012" title=" " alt="" coords="438,191,528,233,526,238,436,196"/>
+<area shape="poly" id="edge11_Node000007_Node000003" title=" " alt="" coords="334,270,234,311,232,306,332,265"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="253,315,309,341"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="350,270,308,307,304,303,347,266"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="332,315,392,341"/>
+<area shape="poly" id="edge10_Node000007_Node000009" title=" " alt="" coords="365,267,365,299,360,299,360,267"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="416,315,487,341"/>
+<area shape="poly" id="edge12_Node000007_Node000010" title=" " alt="" coords="379,265,426,303,423,307,376,270"/>
+<area shape="poly" id="edge16_Node000013_Node000003" title=" " alt="" coords="279,195,209,303,204,300,275,192"/>
+</map>

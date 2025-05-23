@@ -1,0 +1,9 @@
+<map id="/github/workspace/include/position.h" name="/github/workspace/include/position.h">
+<area shape="rect" id="Node000001" title="Esta es la cabecera de la clase mjday, esta implementa un el cálculo de la posición en coordenadas ge..." alt="" coords="170,5,342,46"/>
+<area shape="rect" id="Node000002" href="$position_8cpp.html" title="Implementación del cálculo de la posición geodésica." alt="" coords="5,94,155,135"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="203,56,121,96,119,91,201,51"/>
+<area shape="rect" id="Node000003" href="$EKF__GEOS3_8cpp.html" title="Archivo principal." alt="" coords="179,94,333,135"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="259,62,259,94,253,94,253,62"/>
+<area shape="rect" id="Node000004" href="$tests_8cpp.html" title="Archivo que contiene todos los test." alt="" coords="357,94,510,135"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="311,51,394,91,392,96,309,55"/>
+</map>

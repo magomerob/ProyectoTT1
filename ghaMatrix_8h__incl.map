@@ -1,0 +1,40 @@
+<map id="/github/workspace/include/ghaMatrix.h" name="/github/workspace/include/ghaMatrix.h">
+<area shape="rect" id="Node000001" title="Esta es la cabecera de la clase ghaMatrix, esta calcula la transformación del ecuador verdadero y equ..." alt="" coords="37,5,209,46"/>
+<area shape="rect" id="Node000002" href="$matrix_8h.html" title="Esta es la cabecera de la clase Matriz, esta implementa este objeto en C++." alt="" coords="82,315,148,341"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,47,104,88,91,142,84,204,85,236,89,266,102,300,98,302,84,268,80,236,79,204,86,141,99,86,113,46"/>
+<area shape="rect" id="Node000007" href="$r__z_8h.html" title="Esta es la cabecera de la clase r_z, esta implementa un el cálculo de la matriz de rotación en el eje..." alt="" coords="99,241,147,267"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="126,47,126,225,120,225,120,47"/>
+<area shape="rect" id="Node000008" href="$gast_8h.html" title="Esta es la cabecera de la clase gast, esta calcula el Tiempo sideral aparente de Greenwich." alt="" coords="463,94,519,120"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="210,43,448,94,447,99,209,48"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,389,62,414"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="103,343,60,380,57,376,99,339"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="85,389,144,414"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="118,341,118,373,112,373,112,341"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="286,389,344,414"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="149,339,272,382,271,387,147,344"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="168,389,240,414"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="132,339,179,377,176,381,128,343"/>
+<area shape="poly" id="edge8_Node000007_Node000002" title=" " alt="" coords="124,268,121,300,115,299,119,267"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="140,265,289,377,285,381,137,269"/>
+<area shape="poly" id="edge23_Node000008_Node000005" title=" " alt="" coords="503,119,533,159,564,217,575,249,580,282,576,313,561,342,547,354,527,364,474,380,359,398,359,393,473,375,525,359,544,349,557,339,571,312,575,282,570,250,559,219,528,162,499,122"/>
+<area shape="rect" id="Node000009" href="$gmst_8h.html" title="Esta es la cabecera de la clase gmst, esta implementa el tiempo medio Greenwich Sidereal." alt="" coords="622,241,682,267"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="520,116,563,136,605,166,628,195,644,226,640,229,624,198,601,170,560,140,518,121"/>
+<area shape="rect" id="Node000011" href="$eqnEquinox_8h.html" title="Esta es la cabecera de la clase poleMatrix, esta calcula la ecuación de los equinoccios." alt="" coords="316,168,413,193"/>
+<area shape="poly" id="edge14_Node000008_Node000011" title=" " alt="" coords="471,123,400,162,398,157,468,118"/>
+<area shape="poly" id="edge11_Node000009_Node000005" title=" " alt="" coords="651,269,635,306,622,326,604,343,559,362,493,378,359,398,358,393,492,373,557,357,601,338,618,322,631,303,646,267"/>
+<area shape="rect" id="Node000010" href="$frac_8h.html" title="Esta es la cabecera de la clase frac, esta implementa un el cálculo de la parte fraccionaria de un nú..." alt="" coords="672,315,726,341"/>
+<area shape="poly" id="edge12_Node000009_Node000010" title=" " alt="" coords="662,266,685,300,680,303,658,269"/>
+<area shape="poly" id="edge13_Node000010_Node000005" title=" " alt="" coords="672,339,654,343,492,374,360,396,359,391,491,369,653,338,671,334"/>
+<area shape="poly" id="edge22_Node000011_Node000005" title=" " alt="" coords="364,194,352,242,323,374,318,373,347,241,359,193"/>
+<area shape="rect" id="Node000012" href="$nutAngles_8h.html" title="Esta es la cabecera de la función NutAngles, esta calcula la nutación." alt="" coords="361,241,450,267"/>
+<area shape="poly" id="edge15_Node000011_Node000012" title=" " alt="" coords="373,192,393,226,389,229,369,195"/>
+<area shape="rect" id="Node000015" href="$meanObliquity_8h.html" title="Esta es la cabecera de la clase meanObliquity, esta implementa un el cálculo de la obliquidad media d..." alt="" coords="172,241,285,267"/>
+<area shape="poly" id="edge20_Node000011_Node000015" title=" " alt="" coords="342,196,266,236,263,231,340,192"/>
+<area shape="poly" id="edge17_Node000012_Node000002" title=" " alt="" coords="361,269,164,317,163,312,360,264"/>
+<area shape="poly" id="edge16_Node000012_Node000005" title=" " alt="" coords="398,269,365,316,330,376,326,374,361,314,394,266"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="375,315,473,341"/>
+<area shape="poly" id="edge18_Node000012_Node000013" title=" " alt="" coords="411,267,420,299,415,301,406,268"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="497,315,546,341"/>
+<area shape="poly" id="edge19_Node000012_Node000014" title=" " alt="" coords="427,265,491,304,488,309,424,270"/>
+<area shape="poly" id="edge21_Node000015_Node000005" title=" " alt="" coords="235,266,250,300,270,339,296,375,292,378,266,342,245,302,230,269"/>
+</map>

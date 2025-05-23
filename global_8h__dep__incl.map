@@ -1,0 +1,39 @@
+<map id="/github/workspace/include/global.h" name="/github/workspace/include/global.h">
+<area shape="rect" id="Node000001" title="Esta es la cabecera de la clase global." alt="" coords="634,5,806,46"/>
+<area shape="rect" id="Node000002" href="$JPL__Eph_8h.html" title="Esta es la cabecera de la clase gmst, esta calcula la posición ecuatorial del Sol,..." alt="" coords="788,94,961,135"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="769,51,841,91,838,96,767,56"/>
+<area shape="rect" id="Node000003" href="$accel_8h.html" title="Esta es la cabecera de la clase accel, esta calcula la aceleración de la tierra orbitando un satélite..." alt="" coords="634,183,806,223"/>
+<area shape="poly" id="edge8_Node000001_Node000003" title=" " alt="" coords="722,61,722,182,717,182,717,61"/>
+<area shape="rect" id="Node000005" href="$EKF__GEOS3_8cpp.html" title="Archivo principal." alt="" coords="287,360,440,401"/>
+<area shape="poly" id="edge22_Node000001_Node000005" title=" " alt="" coords="618,33,486,39,336,51,199,70,143,82,102,96,70,113,47,130,30,152,14,184,8,203,14,222,31,241,57,260,132,297,218,331,297,357,296,362,216,336,130,302,55,265,27,245,9,225,3,203,9,182,25,149,44,126,67,108,100,92,142,77,198,64,336,46,486,34,618,27"/>
+<area shape="rect" id="Node000006" href="$tests_8cpp.html" title="Archivo que contiene todos los test." alt="" coords="584,360,738,401"/>
+<area shape="poly" id="edge23_Node000001_Node000006" title=" " alt="" coords="821,31,861,39,901,51,940,68,975,92,1004,121,1021,151,1026,185,1017,224,997,262,969,293,935,318,897,338,856,353,815,364,739,377,738,372,814,359,854,348,894,333,932,314,965,289,993,259,1012,222,1021,185,1016,153,1000,124,971,96,937,73,899,56,859,44,820,36"/>
+<area shape="rect" id="Node000008" href="$accelHarmonic_8h.html" title="Esta es la cabecera de la clase accelHarmonic, esta implementa este objeto en C++." alt="" coords="375,94,547,135"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="648,54,521,96,519,91,646,49"/>
+<area shape="rect" id="Node000010" href="$varEqn_8h.html" title="Esta es la cabecera de la clase poleMatrix, esta calcula la Transformación del sistema del meridiano ..." alt="" coords="190,271,362,312"/>
+<area shape="poly" id="edge20_Node000001_Node000010" title=" " alt="" coords="619,37,463,53,285,82,201,102,126,125,68,153,46,168,30,184,20,205,23,222,36,237,58,249,120,269,189,280,188,285,119,274,56,254,33,241,18,224,15,204,26,181,42,164,65,148,124,120,199,96,284,77,462,48,618,32"/>
+<area shape="rect" id="Node000014" href="$global_8cpp.html" title="Esta es la implementación de la clase global." alt="" coords="1105,94,1254,135"/>
+<area shape="poly" id="edge21_Node000001_Node000014" title=" " alt="" coords="822,42,1087,91,1105,95,1104,100,1086,97,821,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="827,145,756,185,753,180,825,140"/>
+<area shape="poly" id="edge7_Node000002_Node000006" title=" " alt="" coords="949,140,974,158,994,181,1001,203,994,225,970,256,942,282,909,305,875,324,804,352,739,369,738,364,803,347,873,319,907,300,938,278,966,252,989,222,996,203,989,184,971,162,946,144"/>
+<area shape="rect" id="Node000007" href="$JPL__Eph_8cpp.html" title="Implementación de JPL_Eph." alt="" coords="830,183,980,223"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="889,149,901,181,896,183,884,150"/>
+<area shape="rect" id="Node000004" href="$accel_8cpp.html" title="Implementación de la aceleración." alt="" coords="612,271,761,312"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="709,239,696,272,691,270,704,237"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="667,233,404,362,402,357,665,228"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="754,233,767,251,777,271,781,292,775,313,750,342,719,362,716,357,747,338,771,311,776,292,772,273,762,254,749,237"/>
+<area shape="poly" id="edge10_Node000008_Node000003" title=" " alt="" coords="535,137,662,180,660,185,533,142"/>
+<area shape="poly" id="edge19_Node000008_Node000006" title=" " alt="" coords="439,149,424,185,422,204,427,222,443,247,463,269,508,307,558,336,604,357,602,362,555,341,505,311,459,273,439,250,423,224,417,205,419,184,435,147"/>
+<area shape="rect" id="Node000009" href="$g__accelHarmonic_8h.html" title="Esta es la cabecera de la clase g_accelHarmonic, esta calcula el gradiente del campo gravitacional ar..." alt="" coords="438,183,610,223"/>
+<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="486,146,512,181,507,184,482,149"/>
+<area shape="rect" id="Node000012" href="$accelHarmonic_8cpp.html" title="Implementación de la aceleración armónica." alt="" coords="40,183,189,223"/>
+<area shape="poly" id="edge17_Node000008_Node000012" title=" " alt="" coords="368,141,190,186,189,180,367,136"/>
+<area shape="rect" id="Node000013" href="$g__accelHarmonic_8cpp.html" title="Implementación de g_accelHarmonic." alt="" coords="213,183,363,223"/>
+<area shape="poly" id="edge18_Node000008_Node000013" title=" " alt="" coords="409,144,328,185,326,180,407,140"/>
+<area shape="poly" id="edge16_Node000009_Node000006" title=" " alt="" coords="547,235,602,310,644,358,640,361,598,314,543,238"/>
+<area shape="poly" id="edge12_Node000009_Node000010" title=" " alt="" coords="454,231,333,273,331,268,452,226"/>
+<area shape="poly" id="edge14_Node000010_Node000005" title=" " alt="" coords="308,321,346,358,342,361,305,325"/>
+<area shape="poly" id="edge15_Node000010_Node000006" title=" " alt="" coords="378,313,585,359,583,364,376,318"/>
+<area shape="rect" id="Node000011" href="$varEqn_8cpp.html" title="Implementación de varEqn." alt="" coords="113,360,262,401"/>
+<area shape="poly" id="edge13_Node000010_Node000011" title=" " alt="" coords="247,325,209,361,206,358,243,321"/>
+</map>

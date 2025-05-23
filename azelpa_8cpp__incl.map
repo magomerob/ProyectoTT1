@@ -1,0 +1,19 @@
+<map id="/github/workspace/src/azelpa.cpp" name="/github/workspace/src/azelpa.cpp">
+<area shape="rect" id="Node000001" title="Implementación de la función azelpa." alt="" coords="5,5,155,46"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="22,241,79,267"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="78,47,69,94,55,226,50,225,64,94,73,46"/>
+<area shape="rect" id="Node000003" href="$azelpa_8h.html" title="Esta es la cabecera de la función azelpa, esta calcula el azimuth, la elevación y los parciales a par..." alt="" coords="78,94,202,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="97,45,124,80,119,83,93,48"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="135,121,68,229,64,227,130,119"/>
+<area shape="rect" id="Node000004" href="$matrix_8h.html" title="Esta es la cabecera de la clase Matriz, esta implementa este objeto en C++." alt="" coords="119,168,185,193"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="145,119,150,152,145,153,139,120"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="209,168,258,193"/>
+<area shape="poly" id="edge9_Node000003_Node000008" title=" " alt="" coords="157,118,207,156,204,160,154,122"/>
+<area shape="poly" id="edge7_Node000004_Node000002" title=" " alt="" coords="136,196,82,234,79,230,133,192"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="104,241,160,267"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="151,194,142,227,137,226,146,193"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="184,241,243,267"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="164,192,195,228,191,231,160,195"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="267,241,338,267"/>
+<area shape="poly" id="edge8_Node000004_Node000007" title=" " alt="" coords="179,191,264,232,262,237,176,196"/>
+</map>

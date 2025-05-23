@@ -1,0 +1,119 @@
+<map id="/github/workspace/include/accel.h" name="/github/workspace/include/accel.h">
+<area shape="rect" id="Node000001" title="Esta es la cabecera de la clase accel, esta calcula la aceleración de la tierra orbitando un satélite..." alt="" coords="705,5,877,46"/>
+<area shape="rect" id="Node000002" href="$matrix_8h.html" title="Esta es la cabecera de la clase Matriz, esta implementa este objeto en C++." alt="" coords="677,389,743,414"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="764,49,723,81,675,125,629,180,610,210,595,242,591,262,593,282,601,301,613,319,644,352,678,378,675,382,641,356,608,323,596,304,588,283,586,262,590,240,606,208,625,177,671,122,720,77,761,45"/>
+<area shape="rect" id="Node000007" href="$iers_8h.html" title="Esta es la cabecera de la función iers, esta maneja el tiempo iers y el moimiento polar." alt="" coords="44,315,96,341"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="705,36,571,55,498,73,427,96,376,119,326,146,232,205,153,262,97,307,93,303,150,258,229,200,323,141,374,114,425,92,497,68,570,50,704,31"/>
+<area shape="rect" id="Node000009" href="$sat__const_8h.html" title="Esta es la cabecera de la clase SAT_Const, esta recoge las constantes usadas en el resto de programas..." alt="" coords="187,389,275,414"/>
+<area shape="poly" id="edge69_Node000001_Node000009" title=" " alt="" coords="705,28,509,32,394,39,279,52,174,71,87,98,54,115,30,134,14,155,9,179,9,255,11,302,18,320,33,339,64,362,100,378,137,389,172,395,171,400,136,394,98,383,61,367,29,343,13,322,6,303,3,256,3,179,9,153,26,130,52,110,85,93,173,66,278,47,394,34,509,27,705,23"/>
+<area shape="rect" id="Node000010" href="$timediff_8h.html" title="Esta es la cabecera de la clase timediff, esta implementa una lista de diferencias horarias." alt="" coords="1165,94,1239,120"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="879,39,1151,91,1150,96,878,44"/>
+<area shape="rect" id="Node000011" href="$global_8h.html" title="Esta es la cabecera de la clase global." alt="" coords="269,315,335,341"/>
+<area shape="poly" id="edge14_Node000001_Node000011" title=" " alt="" coords="705,41,627,62,587,77,550,96,521,116,499,136,468,177,438,221,392,269,337,309,334,304,388,265,434,217,463,174,495,133,518,112,547,92,585,72,625,57,704,36"/>
+<area shape="rect" id="Node000014" href="$precMatrix_8h.html" title="Esta es la cabecera de la clase precMatrix, esta implementa la transformación de la matriz de precesi..." alt="" coords="860,241,952,267"/>
+<area shape="poly" id="edge21_Node000001_Node000014" title=" " alt="" coords="804,45,895,226,891,228,799,48"/>
+<area shape="rect" id="Node000018" href="$nutMatrix_8h.html" title="Esta es la cabecera de la clase poleMatrix, esta calcula la transformación del ecuador medio al verda..." alt="" coords="976,241,1060,267"/>
+<area shape="poly" id="edge34_Node000001_Node000018" title=" " alt="" coords="813,45,997,228,993,232,809,49"/>
+<area shape="rect" id="Node000022" href="$poleMatrix_8h.html" title="Esta es la cabecera de la clase poleMatrix, esta calcula la transformación de coordenadas pseudofijas..." alt="" coords="746,241,836,267"/>
+<area shape="poly" id="edge46_Node000001_Node000022" title=" " alt="" coords="794,47,794,225,789,225,789,47"/>
+<area shape="rect" id="Node000023" href="$JPL__Eph_8h.html" title="Esta es la cabecera de la clase gmst, esta calcula la posición ecuatorial del Sol,..." alt="" coords="293,241,377,267"/>
+<area shape="poly" id="edge50_Node000001_Node000023" title=" " alt="" coords="705,31,648,37,586,49,523,68,465,96,427,126,395,161,369,198,351,229,346,226,365,195,391,158,423,122,462,92,521,63,585,44,647,32,704,26"/>
+<area shape="rect" id="Node000025" href="$accelPointMass_8h.html" title="Esta es la cabecera de la clase accelPointMass, esta implementa este objeto en C++." alt="" coords="1674,315,1799,341"/>
+<area shape="poly" id="edge58_Node000001_Node000025" title=" " alt="" coords="878,26,1010,35,1178,57,1269,75,1360,98,1450,128,1535,165,1589,197,1640,234,1716,302,1712,306,1637,238,1587,202,1533,170,1448,133,1359,104,1267,80,1177,62,1010,40,878,31"/>
+<area shape="rect" id="Node000026" href="$accelHarmonic_8h.html" title="Esta es la cabecera de la clase accelHarmonic, esta implementa este objeto en C++." alt="" coords="604,241,722,267"/>
+<area shape="poly" id="edge61_Node000001_Node000026" title=" " alt="" coords="782,48,680,229,675,227,778,45"/>
+<area shape="rect" id="Node000028" href="$mjday__tdb_8h.html" title="Esta es la cabecera de la clase mjday, esta implementa un el cálculo de la fecha juliana para tiempo ..." alt="" coords="1763,168,1854,193"/>
+<area shape="poly" id="edge70_Node000001_Node000028" title=" " alt="" coords="878,23,1073,24,1317,32,1440,41,1552,53,1648,70,1719,92,1741,104,1761,120,1793,153,1789,157,1758,124,1738,109,1717,96,1647,75,1552,58,1439,46,1317,38,1073,30,878,29"/>
+<area shape="rect" id="Node000029" href="$ghaMatrix_8h.html" title="Esta es la cabecera de la clase ghaMatrix, esta calcula la transformación del ecuador verdadero y equ..." alt="" coords="1054,94,1142,120"/>
+<area shape="poly" id="edge72_Node000001_Node000029" title=" " alt="" coords="869,44,1040,88,1039,93,867,49"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="770,462,826,488"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="727,413,773,450,770,455,723,417"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="591,462,650,488"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="696,417,649,455,646,450,693,413"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="885,462,943,488"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="745,412,872,456,870,461,743,417"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="674,462,746,488"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="713,415,713,447,707,447,707,415"/>
+<area shape="poly" id="edge8_Node000007_Node000002" title=" " alt="" coords="97,336,108,338,661,393,661,398,107,343,96,341"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="80,340,109,377,131,397,155,412,218,431,298,444,391,450,491,453,687,454,771,455,838,460,870,464,869,469,838,465,771,461,687,459,491,459,391,456,298,449,216,437,153,417,127,401,105,381,75,343"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="528,389,577,414"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="97,335,108,338,513,392,512,398,107,343,96,341"/>
+<area shape="poly" id="edge10_Node000007_Node000009" title=" " alt="" coords="98,338,191,380,189,384,96,343"/>
+<area shape="poly" id="edge11_Node000009_Node000005" title=" " alt="" coords="276,410,288,412,442,430,562,438,683,445,838,460,870,464,869,469,838,465,683,450,562,443,441,435,287,417,275,415"/>
+<area shape="poly" id="edge13_Node000010_Node000008" title=" " alt="" coords="1205,120,1202,164,1192,224,1182,257,1168,289,1149,318,1124,343,593,399,593,393,1122,338,1145,315,1163,286,1177,255,1187,223,1197,163,1199,120"/>
+<area shape="poly" id="edge16_Node000011_Node000002" title=" " alt="" coords="335,332,662,389,661,394,335,338"/>
+<area shape="poly" id="edge15_Node000011_Node000005" title=" " alt="" coords="336,338,464,386,490,400,516,412,604,434,675,444,747,449,838,460,870,464,869,470,838,465,746,454,674,449,603,440,514,417,488,405,462,391,334,343"/>
+<area shape="poly" id="edge19_Node000011_Node000009" title=" " alt="" coords="292,343,256,379,252,376,288,339"/>
+<area shape="rect" id="Node000012" href="$mjday_8h.html" title="Esta es la cabecera de la clase mjday, esta implementa un el cálculo de la fecha juliana." alt="" coords="387,389,452,414"/>
+<area shape="poly" id="edge17_Node000011_Node000012" title=" " alt="" coords="323,339,388,378,385,383,321,343"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="300,389,363,414"/>
+<area shape="poly" id="edge20_Node000011_Node000013" title=" " alt="" coords="309,340,323,373,318,375,304,342"/>
+<area shape="poly" id="edge18_Node000012_Node000005" title=" " alt="" coords="453,408,472,412,574,428,655,438,838,460,870,464,869,470,838,465,654,443,574,433,471,417,452,413"/>
+<area shape="poly" id="edge23_Node000014_Node000002" title=" " alt="" coords="884,270,808,317,734,380,731,376,804,313,882,265"/>
+<area shape="poly" id="edge22_Node000014_Node000005" title=" " alt="" coords="920,266,938,287,953,314,958,351,953,388,943,422,930,450,926,448,938,420,948,387,953,351,947,316,934,290,916,269"/>
+<area shape="poly" id="edge24_Node000014_Node000009" title=" " alt="" coords="860,268,849,270,736,275,547,282,362,294,295,304,272,310,258,317,248,329,241,343,234,374,229,373,236,341,244,326,255,313,270,305,294,299,361,289,547,276,736,270,848,264,859,263"/>
+<area shape="rect" id="Node000015" href="$r__x_8h.html" title="Esta es la cabecera de la clase r_x, esta implementa un el cálculo de la matriz de rotación en el eje..." alt="" coords="818,315,866,341"/>
+<area shape="poly" id="edge25_Node000014_Node000015" title=" " alt="" coords="897,269,865,305,861,302,893,265"/>
+<area shape="rect" id="Node000016" href="$r__y_8h.html" title="Esta es la cabecera de la clase r_y, esta implementa un el cálculo de la matriz de rotación en el eje..." alt="" coords="890,315,938,341"/>
+<area shape="poly" id="edge28_Node000014_Node000016" title=" " alt="" coords="910,267,914,299,908,300,905,268"/>
+<area shape="rect" id="Node000017" href="$r__z_8h.html" title="Esta es la cabecera de la clase r_z, esta implementa un el cálculo de la matriz de rotación en el eje..." alt="" coords="1063,315,1111,341"/>
+<area shape="poly" id="edge31_Node000014_Node000017" title=" " alt="" coords="938,265,1050,309,1048,314,936,270"/>
+<area shape="poly" id="edge27_Node000015_Node000002" title=" " alt="" coords="821,344,747,383,744,379,818,339"/>
+<area shape="poly" id="edge26_Node000015_Node000005" title=" " alt="" coords="850,340,904,447,899,449,845,342"/>
+<area shape="poly" id="edge30_Node000016_Node000002" title=" " alt="" coords="890,340,759,386,757,381,888,335"/>
+<area shape="poly" id="edge29_Node000016_Node000005" title=" " alt="" coords="917,341,917,447,911,447,911,341"/>
+<area shape="poly" id="edge33_Node000017_Node000002" title=" " alt="" coords="1063,339,1045,343,889,374,759,396,758,390,888,369,1044,338,1062,334"/>
+<area shape="poly" id="edge32_Node000017_Node000005" title=" " alt="" coords="1077,343,996,416,945,455,942,451,992,412,1073,339"/>
+<area shape="poly" id="edge35_Node000018_Node000002" title=" " alt="" coords="1014,269,990,306,972,326,951,343,904,367,852,384,803,394,759,400,759,395,802,389,851,379,901,362,949,338,969,322,986,302,1010,266"/>
+<area shape="poly" id="edge43_Node000018_Node000015" title=" " alt="" coords="989,270,881,314,879,309,987,265"/>
+<area shape="poly" id="edge44_Node000018_Node000016" title=" " alt="" coords="1002,270,946,308,943,304,999,265"/>
+<area shape="poly" id="edge45_Node000018_Node000017" title=" " alt="" coords="1031,265,1067,302,1063,306,1028,269"/>
+<area shape="rect" id="Node000019" href="$meanObliquity_8h.html" title="Esta es la cabecera de la clase meanObliquity, esta implementa un el cálculo de la obliquidad media d..." alt="" coords="1351,315,1464,341"/>
+<area shape="poly" id="edge36_Node000018_Node000019" title=" " alt="" coords="1061,261,1336,311,1335,316,1060,266"/>
+<area shape="rect" id="Node000020" href="$nutAngles_8h.html" title="Esta es la cabecera de la función NutAngles, esta calcula la nutación." alt="" coords="1237,315,1327,341"/>
+<area shape="poly" id="edge38_Node000018_Node000020" title=" " alt="" coords="1061,264,1223,308,1222,313,1060,269"/>
+<area shape="poly" id="edge37_Node000019_Node000005" title=" " alt="" coords="1405,342,1383,380,1366,400,1345,417,1313,430,1270,441,1163,458,1050,469,958,475,958,469,1049,464,1162,453,1269,436,1311,425,1342,412,1362,396,1378,377,1400,340"/>
+<area shape="poly" id="edge40_Node000020_Node000002" title=" " alt="" coords="1237,340,1218,343,959,377,759,398,758,393,959,371,1218,338,1237,335"/>
+<area shape="poly" id="edge39_Node000020_Node000005" title=" " alt="" coords="1252,344,958,459,956,455,1250,339"/>
+<area shape="poly" id="edge42_Node000020_Node000008" title=" " alt="" coords="1237,336,1168,343,665,391,593,399,592,393,664,386,1167,338,1237,331"/>
+<area shape="rect" id="Node000021" title=" " alt="" coords="1233,389,1331,414"/>
+<area shape="poly" id="edge41_Node000020_Node000021" title=" " alt="" coords="1285,341,1285,373,1279,373,1279,341"/>
+<area shape="poly" id="edge47_Node000022_Node000002" title=" " alt="" coords="766,270,737,289,724,302,714,316,706,345,707,373,702,374,701,344,709,314,720,298,733,285,763,265"/>
+<area shape="poly" id="edge48_Node000022_Node000015" title=" " alt="" coords="802,266,827,301,823,304,798,269"/>
+<area shape="poly" id="edge49_Node000022_Node000016" title=" " alt="" coords="813,265,882,305,879,309,811,270"/>
+<area shape="poly" id="edge53_Node000023_Node000002" title=" " alt="" coords="372,265,503,313,560,338,665,380,663,385,558,343,501,317,370,270"/>
+<area shape="poly" id="edge51_Node000023_Node000005" title=" " alt="" coords="293,260,225,265,146,276,76,292,50,304,33,317,30,327,34,340,49,367,65,385,86,399,115,412,182,431,268,443,366,450,472,453,678,454,767,455,838,460,870,464,869,469,838,465,767,460,678,459,472,458,366,455,267,448,181,436,113,417,83,403,61,389,44,370,29,342,24,327,29,313,47,299,74,287,145,270,224,260,293,255"/>
+<area shape="poly" id="edge52_Node000023_Node000008" title=" " alt="" coords="344,266,365,302,381,321,399,338,449,362,514,385,512,390,447,367,396,343,377,325,361,305,339,269"/>
+<area shape="poly" id="edge54_Node000023_Node000011" title=" " alt="" coords="332,268,316,302,312,300,327,266"/>
+<area shape="rect" id="Node000024" href="$cheb3d_8h.html" title="Esta es la cabecera de la clase cheb3d, esta implementa una aproximación de chebyshev." alt="" coords="120,315,193,341"/>
+<area shape="poly" id="edge55_Node000023_Node000024" title=" " alt="" coords="306,270,202,311,200,306,304,265"/>
+<area shape="poly" id="edge57_Node000024_Node000002" title=" " alt="" coords="194,331,662,391,661,397,193,337"/>
+<area shape="poly" id="edge56_Node000024_Node000005" title=" " alt="" coords="158,341,159,378,165,397,177,412,192,420,217,427,292,438,500,451,711,456,838,460,870,464,869,469,838,465,711,461,500,456,292,444,216,433,190,425,174,416,161,399,154,378,153,341"/>
+<area shape="poly" id="edge60_Node000025_Node000002" title=" " alt="" coords="1674,342,1664,343,1396,368,1134,385,759,401,758,396,1134,380,1396,362,1663,338,1674,337"/>
+<area shape="poly" id="edge59_Node000025_Node000005" title=" " alt="" coords="1735,342,1715,380,1700,400,1679,417,1636,430,1561,441,1352,458,1126,469,958,475,958,470,1126,464,1352,453,1560,435,1635,424,1677,412,1696,397,1711,377,1730,340"/>
+<area shape="poly" id="edge63_Node000026_Node000002" title=" " alt="" coords="663,268,658,301,659,321,663,340,673,359,687,376,683,379,669,362,658,342,654,321,653,301,658,267"/>
+<area shape="poly" id="edge62_Node000026_Node000005" title=" " alt="" coords="679,266,891,450,888,454,675,270"/>
+<area shape="poly" id="edge68_Node000026_Node000011" title=" " alt="" coords="604,270,350,320,349,314,603,265"/>
+<area shape="rect" id="Node000027" href="$legendre_8h.html" title="Esta es la cabecera de la función legendre, esta calcula dichos polinomios." alt="" coords="410,315,490,341"/>
+<area shape="poly" id="edge64_Node000026_Node000027" title=" " alt="" coords="628,270,501,312,500,307,626,265"/>
+<area shape="poly" id="edge66_Node000027_Node000002" title=" " alt="" coords="491,338,663,384,661,390,490,343"/>
+<area shape="poly" id="edge65_Node000027_Node000005" title=" " alt="" coords="478,339,561,374,665,412,776,442,871,463,870,468,775,447,664,417,559,379,476,344"/>
+<area shape="poly" id="edge67_Node000027_Node000008" title=" " alt="" coords="469,339,524,377,521,382,466,343"/>
+<area shape="poly" id="edge71_Node000028_Node000005" title=" " alt="" coords="1815,193,1822,221,1827,259,1826,301,1814,342,1794,372,1772,391,1745,404,1711,417,1644,434,1554,448,1336,466,1118,474,958,476,958,471,1117,469,1336,460,1554,442,1643,429,1709,412,1743,399,1769,387,1790,369,1809,340,1821,300,1822,259,1817,222,1810,194"/>
+<area shape="poly" id="edge73_Node000029_Node000002" title=" " alt="" coords="1107,119,1127,160,1145,219,1150,252,1150,284,1142,315,1125,342,1100,361,1061,375,1014,386,961,394,851,402,758,403,758,398,850,396,960,388,1013,381,1060,370,1097,356,1121,339,1137,313,1144,284,1145,252,1140,221,1122,162,1102,121"/>
+<area shape="poly" id="edge74_Node000029_Node000017" title=" " alt="" coords="1100,120,1091,300,1086,299,1095,120"/>
+<area shape="rect" id="Node000030" href="$gast_8h.html" title="Esta es la cabecera de la clase gast, esta calcula el Tiempo sideral aparente de Greenwich." alt="" coords="1466,168,1522,193"/>
+<area shape="poly" id="edge75_Node000029_Node000030" title=" " alt="" coords="1142,115,1154,117,1451,169,1450,175,1153,122,1141,120"/>
+<area shape="poly" id="edge84_Node000030_Node000005" title=" " alt="" coords="1500,193,1510,258,1509,300,1499,342,1486,369,1471,388,1452,402,1426,417,1386,431,1333,442,1202,460,1065,470,958,475,958,470,1065,465,1201,454,1332,437,1385,426,1424,412,1449,398,1468,384,1481,366,1494,340,1504,300,1505,258,1495,194"/>
+<area shape="rect" id="Node000031" href="$gmst_8h.html" title="Esta es la cabecera de la clase gmst, esta implementa el tiempo medio Greenwich Sidereal." alt="" coords="1590,315,1651,341"/>
+<area shape="poly" id="edge76_Node000030_Node000031" title=" " alt="" coords="1515,192,1544,212,1573,240,1595,270,1611,299,1607,302,1590,272,1569,243,1541,217,1512,196"/>
+<area shape="rect" id="Node000033" href="$eqnEquinox_8h.html" title="Esta es la cabecera de la clase poleMatrix, esta calcula la ecuación de los equinoccios." alt="" coords="1388,241,1485,267"/>
+<area shape="poly" id="edge80_Node000030_Node000033" title=" " alt="" coords="1487,195,1458,231,1454,227,1482,192"/>
+<area shape="poly" id="edge77_Node000031_Node000005" title=" " alt="" coords="1635,339,1648,356,1660,375,1665,397,1657,416,1643,426,1619,434,1548,448,1454,458,1346,466,1125,474,958,476,958,471,1125,469,1346,460,1454,453,1548,442,1617,429,1640,421,1653,413,1660,396,1655,377,1644,359,1631,343"/>
+<area shape="rect" id="Node000032" href="$frac_8h.html" title="Esta es la cabecera de la clase frac, esta implementa un el cálculo de la parte fraccionaria de un nú..." alt="" coords="1590,389,1643,414"/>
+<area shape="poly" id="edge78_Node000031_Node000032" title=" " alt="" coords="1623,341,1621,373,1616,373,1617,341"/>
+<area shape="poly" id="edge79_Node000032_Node000005" title=" " alt="" coords="1590,413,1572,417,1394,442,1219,459,958,475,958,470,1218,454,1394,437,1571,412,1589,408"/>
+<area shape="poly" id="edge83_Node000033_Node000005" title=" " alt="" coords="1451,266,1476,299,1483,320,1479,342,1460,372,1438,390,1411,404,1378,417,1342,428,1294,438,1177,454,958,474,958,468,1176,449,1293,432,1340,423,1376,412,1409,399,1435,386,1456,368,1474,340,1477,321,1472,302,1447,269"/>
+<area shape="poly" id="edge82_Node000033_Node000019" title=" " alt="" coords="1434,268,1421,301,1416,299,1429,266"/>
+<area shape="poly" id="edge81_Node000033_Node000020" title=" " alt="" coords="1412,270,1323,311,1321,306,1409,265"/>
+</map>

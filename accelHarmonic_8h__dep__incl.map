@@ -1,0 +1,25 @@
+<map id="/github/workspace/include/accelHarmonic.h" name="/github/workspace/include/accelHarmonic.h">
+<area shape="rect" id="Node000001" title="Esta es la cabecera de la clase accelHarmonic, esta implementa este objeto en C++." alt="" coords="531,5,704,46"/>
+<area shape="rect" id="Node000002" href="$accel_8h.html" title="Esta es la cabecera de la clase accel, esta calcula la aceleración de la tierra orbitando un satélite..." alt="" coords="160,183,333,223"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="517,52,456,71,396,96,325,141,270,184,267,180,322,136,393,92,454,66,515,47"/>
+<area shape="rect" id="Node000005" href="$tests_8cpp.html" title="Archivo que contiene todos los test." alt="" coords="531,271,685,312"/>
+<area shape="poly" id="edge13_Node000001_Node000005" title=" " alt="" coords="619,62,611,271,606,271,613,62"/>
+<area shape="rect" id="Node000006" href="$g__accelHarmonic_8h.html" title="Esta es la cabecera de la clase g_accelHarmonic, esta calcula el gradiente del campo gravitacional ar..." alt="" coords="407,94,580,135"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="578,57,523,96,520,91,575,53"/>
+<area shape="rect" id="Node000009" href="$accelHarmonic_8cpp.html" title="Implementación de la aceleración armónica." alt="" coords="655,94,804,135"/>
+<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="656,53,706,91,702,96,653,58"/>
+<area shape="rect" id="Node000010" href="$g__accelHarmonic_8cpp.html" title="Implementación de g_accelHarmonic." alt="" coords="828,94,978,135"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="698,48,839,91,837,96,696,54"/>
+<area shape="rect" id="Node000003" href="$accel_8cpp.html" title="Implementación de la aceleración." alt="" coords="5,271,155,312"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="197,233,119,273,116,269,194,228"/>
+<area shape="rect" id="Node000004" href="$EKF__GEOS3_8cpp.html" title="Archivo principal." alt="" coords="179,271,333,312"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="253,239,257,271,251,271,248,239"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="344,225,531,269,530,275,343,230"/>
+<area shape="poly" id="edge10_Node000006_Node000005" title=" " alt="" coords="519,145,544,181,599,270,594,272,539,184,514,149"/>
+<area shape="rect" id="Node000007" href="$varEqn_8h.html" title="Esta es la cabecera de la clase poleMatrix, esta calcula la Transformación del sistema del meridiano ..." alt="" coords="356,183,529,223"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="476,150,456,184,452,181,472,147"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="388,233,299,273,297,268,385,228"/>
+<area shape="poly" id="edge9_Node000007_Node000005" title=" " alt="" coords="495,228,572,269,569,273,492,233"/>
+<area shape="rect" id="Node000008" href="$varEqn_8cpp.html" title="Implementación de varEqn." alt="" coords="357,271,507,312"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="441,239,437,271,432,271,436,239"/>
+</map>
