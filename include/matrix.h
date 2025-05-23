@@ -186,7 +186,6 @@ class Matrix
      */
         Matrix operator/(const double n);
     
-        Matrix& operator=(Matrix&& other) noexcept;
 
     private:
         void initMatrix();
