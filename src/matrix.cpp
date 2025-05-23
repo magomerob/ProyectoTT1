@@ -108,6 +108,7 @@ Matrix& Matrix::operator=(const Matrix& matrix2)
 {
     this->fil = matrix2.fil;
     this->col = matrix2.col;
+    delete this->matrix;
     initMatrix();
     for (int i = 0; i < fil; i++)
         for (int j = 0; j < col; j++)

@@ -11,8 +11,9 @@
 
  #ifndef _GMST_
  #define _GMST_
+ #define _USE_MATH_DEFINES
  #include <cmath>
- #include "frac.h"
+ #include "frac.h" 
  using namespace std;
  
  /**
