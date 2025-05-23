@@ -47,5 +47,5 @@ tuple<double, double, Matrix, Matrix> azelpa(Matrix& s)
     }
     dEds = dEds / dot(s,s);
 
-    return tie(Az, El, dAds, dEds);
+    return {Az, El, dAds, dEds};
 }
